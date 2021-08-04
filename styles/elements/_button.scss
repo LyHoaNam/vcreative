@@ -1,0 +1,19 @@
+.btn-primary {
+  @extend .flex-center;
+  background-color: $cool-2;
+  @include fz(16);
+  border-radius: 3px;
+  color: $level-0;
+  width: 80px;
+  height: 40px;
+}
+.btn-line {
+  @extend .flex-center;
+  border: 1px solid $cool-2;
+  @include fz(16);
+  border-radius: 3px;
+  color: $cool-2;
+  @include pd-y(16);
+  @include pd-x(8);
+  cursor: pointer;
+}
