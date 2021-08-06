@@ -1,0 +1,44 @@
+.ft-container {
+  background-color: $level-1;
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+.ft-left {
+  max-width: 330px;
+}
+.ft-right {
+  min-width: 900px
+}
+.ft-bot {
+  margin-top: 36px;
+  border-top: 1px solid $level-3;
+  @include flex();
+  @include justify-content(space-between);
+  @include align-items(center);
+  height: 88px;
+}
+.ft {
+  &-txt {
+    &-description {
+      color: $level-8;
+      @include fz(14);
+    }
+    &-license {
+      @include fz(16);
+      color: $level-6;
+    }
+    color: $level-7;
+    @include fz(16);
+  }
+  &-record {
+    padding-bottom: 16px;
+  }
+  &-icon {
+    width: 32px;
+    height: 32px;
+  }
+  &-img-lin {
+    width: 168px;
+    height: 63px;
+  }
+}

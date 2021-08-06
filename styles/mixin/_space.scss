@@ -1,0 +1,80 @@
+@mixin generate-space($limit: 64) {
+  @for $i from 1 through $limit {
+    .pl-#{$i} {
+      padding-left: $i + px;
+    }
+    .pr-#{$i} {
+      padding-right: $i + px;
+    }
+    .pb-#{$i} {
+      padding-bottom: $i + px;
+    }
+    .pt-#{$i} {
+      padding-top: $i + px;
+    }
+    .ml-#{$i} {
+      margin-left: $i + px;
+    }
+    .mr-#{$i} {
+      margin-right: $i + px;
+    }
+    .mb-#{$i} {
+      margin-bottom: $i + px;
+    }
+    .mt-#{$i} {
+      margin-top: $i + px;
+    }
+    .p-y-#{$i} {
+      padding-left: $i + px;
+      padding-right: $i + px;
+    }
+    .p-x-#{$i} {
+      padding-top: $i + px;
+      padding-bottom: $i + px;
+    }
+    .m-y-#{$i} {
+      margin-left: $i + px;
+      margin-right: $i + px;
+    }
+    .m-x-#{$i} {
+      margin-top: $i + px;
+      margin-bottom: $i + px;
+    }
+    .p-#{$i} {
+      padding: $i + px;
+    }
+    .m-#{$i} {
+      margin: $i + px;
+    }
+  }
+}
+@include generate-space(64);
+
+@mixin pd-y($value: 0) {
+  padding-left: $value + px;
+  padding-right: $value + px;
+}
+@mixin pd-x($value: 0) {
+  padding-top: $value + px;
+  padding-bottom: $value + px;
+}
+@mixin pd($value: 0) {
+  padding-top: $value + px;
+  padding-bottom: $value + px;
+  padding-left: $value + px;
+  padding-right: $value + px;
+}
+@mixin m-y($value: 0) {
+  margin-left: $value + px;
+  margin-right: $value + px;
+}
+@mixin m-x($value: 0) {
+  margin-top: $value + px;
+  margin-bottom: $value + px;
+}
+@mixin mg($value: 0) {
+  margin-left: $value + px;
+  margin-right: $value + px;
+  margin-top: $value + px;
+  margin-bottom: $value + px;
+}
