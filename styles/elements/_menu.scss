@@ -1,0 +1,22 @@
+$mn-h: 72px;
+.mn-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $mn-h;
+  background-color: $level-1;
+  width: 100%;
+}
+.mn-nav {
+  padding-left: 25px;
+}
+.mn-li {
+  @include pd-y(15);
+  height: $mn-h;
+}
+.mn-link {
+  @include fz(16);
+  font-weight: $medium;
+  display: block;
+  color: $level-8;
+}
