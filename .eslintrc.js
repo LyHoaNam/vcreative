@@ -11,10 +11,25 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'prettier'
+    'plugin:prettier/recommended'
   ],
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    semi: ['error', 'always'],
+    quotes: ['error', 'single'],
+    'no-useless-catch': 'off',
+    'vue/no-v-html': 'on',
+    'no-irregular-whitespace': ['error', { 'skipComments': true }],
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'always',
+        'normal': 'always',
+        'component': 'always'
+      },
+      'svg': 'always',
+      'math': 'always'
+    }]
+  }
 }

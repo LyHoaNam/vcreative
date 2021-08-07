@@ -9,6 +9,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
+- `<MenuUnlogin>` | `<menu-unlogin>` (components/menu/Unlogin.vue)
 - `<EleIcon>` | `<ele-icon>` (components/ele/Icon.vue)
 - `<EleNav>` | `<ele-nav>` (components/ele/Nav.vue)
-- `<MenuUnlogin>` | `<menu-unlogin>` (components/menu/Unlogin.vue)
