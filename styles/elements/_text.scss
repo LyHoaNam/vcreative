@@ -4,3 +4,13 @@
 .font-bold {
   font-weight: $bold;
 }
+.title {
+  font-weight: 500;
+  line-height: 37px;
+  @include fz(32);
+  color: $level-8;
+}
+.link-normal {
+  @include fz(16);
+  color: $cool-2;
+}
