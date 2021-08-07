@@ -1,8 +1,11 @@
 <template>
   <div>
     <Header />
-    <div class="px-30 container">
+    <div class="pt-42 container">
+      <homeHero />
       <homeTopService />
+      <homeTopGraphicService />
+      <homeTopSell />
     </div>
     <Footer />
   </div>
