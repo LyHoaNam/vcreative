@@ -22,6 +22,9 @@ export default {
         pagination: {
           el: '.swiper-pagination',
         },
+        autoplay: {
+          delay: 3000,
+        },
       },
       mockData: [
         'https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
