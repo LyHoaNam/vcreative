@@ -14,3 +14,13 @@
   height: 24px;
   border-radius: 50%;
 }
+.break-line {
+  @extend %base-img;
+  background-image: url("~/assets/images/line-banner.jpeg");
+  width: $max-width;
+  height: 264px;
+  &-contain {
+    padding-top: 24px;
+    padding-bottom: 56px;
+  }
+}

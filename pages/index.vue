@@ -6,6 +6,10 @@
       <homeTopService />
       <homeTopGraphicService />
       <homeTopSell />
+      <div class="break-line-contain">
+        <div class="break-line" />
+      </div>
+      <homeTopDraw />
     </div>
     <Footer />
   </div>
