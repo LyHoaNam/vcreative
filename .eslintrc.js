@@ -18,7 +18,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    semi: ['error', 'always'],
+    semi: ['warn', 'always'],
     quotes: ['error', 'single'],
     'no-useless-catch': 'off',
     'vue/no-v-html': 2,

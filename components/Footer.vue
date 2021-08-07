@@ -53,12 +53,12 @@
   </footer>
 </template>
 <script>
-import { footer } from '../utils/footer'
+import { footer } from '~/utils/footer';
 export default {
   data() {
     return {
       footer,
-    }
+    };
   },
-}
+};
 </script>

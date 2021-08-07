@@ -1,5 +1,5 @@
 <template>
-  <div class="container align-between mb-26">
+  <div class="align-between mb-26">
     <h1 class="title">{{ title }}</h1>
     <nuxt-link :to="href" class="block link-normal">
       {{ sub }}
@@ -25,5 +25,5 @@ export default {
       default: '',
     },
   },
-}
+};
 </script>

@@ -1,13 +1,19 @@
 <template>
   <div class="align-center">
     <div class="flex icon-start-contain">
-      <div v-for="(item, idx) in Math.round(rate)" :key="`${idx}-rate`">
+      <div
+        v-for="(item, idx) in Math.round(rate)"
+        :key="`${idx}-${Math.random()}-rate`"
+      >
         <eleIcon
           :img-url="require('~/assets/images/icon/icon-start.png')"
           img-class="ic-start"
         />
       </div>
-      <div v-for="(item, idx) in 5 - Math.round(rate)" :key="`${idx}-rate`">
+      <div
+        v-for="(item, idx) in 5 - Math.round(rate)"
+        :key="`${idx}-${Math.random()}-rate-bl`"
+      >
         <eleIcon
           :img-url="require('~/assets/images/icon/icon-start-black.png')"
           img-class="ic-start"
