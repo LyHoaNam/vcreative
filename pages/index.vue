@@ -10,6 +10,7 @@
         <div class="break-line" />
       </div>
       <homeTopDraw />
+      <homeMayLiked />
     </div>
     <Footer />
   </div>

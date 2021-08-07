@@ -7,13 +7,12 @@
           v-for="(item, index) in listCard"
           :key="`${index}-${Math.random()}-tsv`"
         >
-          <EleCardSell
+          <EleCard
             :img="item.img"
             :description="item.description"
             :rate="item.rate"
             :rate-count="item.rateCount"
             :amount="item.amount"
-            :ls-label="item.label"
           >
             <template slot="user">
               <EleUser
@@ -23,13 +22,9 @@
               />
             </template>
             <template slot="rate">
-              <eleRate
-                :rate-start="item.rate"
-                :count-rate="item.rateCount"
-                :is-sell="true"
-              />
+              <eleRate :rate-start="item.rate" :count-rate="item.rateCount" />
             </template>
-          </EleCardSell>
+          </EleCard>
         </swiper-slide>
       </swiper>
       <div slot="button-prev" class="swiper-button-prev" />
@@ -39,15 +34,12 @@
 </template>
 <script>
 import { swiperOptions } from '~/utils/constant.js';
-import { mockListCardSell } from '~/utils/common.js';
+import { mockListCard } from '~/utils/common.js';
 export default {
   data() {
     return {
-      listCard: mockListCardSell(),
-      swiperOptions: {
-        ...swiperOptions,
-        slidesPerView: 4,
-      },
+      listCard: mockListCard(),
+      swiperOptions,
     };
   },
 };
