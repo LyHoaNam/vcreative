@@ -8,13 +8,13 @@
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
-  "MenuUnlogin": {
-    "description": "Auto imported from components/menu/Unlogin.vue"
-  },
   "EleIcon": {
     "description": "Auto imported from components/ele/Icon.vue"
   },
   "EleNav": {
     "description": "Auto imported from components/ele/Nav.vue"
+  },
+  "MenuUnlogin": {
+    "description": "Auto imported from components/menu/Unlogin.vue"
   }
 }
