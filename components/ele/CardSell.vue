@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card-sell">
     <div class="card-thumbnail" :style="{ backgroundImage: `url(${img})` }" />
     <div class="card-content">
       <slot name="user" />
@@ -7,10 +7,20 @@
         {{ description }}
       </p>
       <div class="card-bot">
+        <div class="card-sell-lb flex pb-10">
+          <div
+            v-for="(lb, idx) in lsLabel"
+            :key="`${idx}-${Math.random()}-label`"
+            class="card-sell-lb-item"
+          >
+            <label class="label-nm">
+              {{ lb }}
+            </label>
+          </div>
+        </div>
         <slot name="rate" />
-        <div class="align-between mt-8">
-          <p class="txt-14-7">
-            Từ
+        <div class="align-between mt-16">
+          <p class="txt-14-7 text-16-w2">
             <span class="font-bold">{{ amount.toLocaleString('de-VI') }}</span>
           </p>
           <eleIcon
@@ -40,6 +50,13 @@ export default {
       type: Number,
       require: true,
       default: 0,
+    },
+    lsLabel: {
+      type: Array,
+      require: true,
+      default: () => {
+        return [];
+      },
     },
   },
   data() {

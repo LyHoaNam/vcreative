@@ -12,8 +12,19 @@
             :description="item.description"
             :rate="item.rate"
             :rate-count="item.rateCount"
-            :amout="item.amout"
-          />
+            :amount="item.amount"
+          >
+            <template slot="user">
+              <EleUser
+                :avatar="item.avatar"
+                :name="item.name"
+                :ontop="item.ontop"
+              />
+            </template>
+            <template slot="rate">
+              <eleRate :rate-start="item.rate" :count-rate="item.rateCount" />
+            </template>
+          </EleCard>
         </swiper-slide>
       </swiper>
       <div slot="button-prev" class="swiper-button-prev" />

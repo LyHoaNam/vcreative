@@ -1,12 +1,15 @@
-.card {
+%card-base {
   border-radius: 2px;
-  width: 240px;
   border: 1px solid $level-2;
   background-color: $level-0;
   cursor: pointer;
   position: relative;
   height: 100%;
   box-sizing: border-box;
+}
+.card {
+  @extend %card-base;
+  width: 240px;
   &:hover {
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.16);
     .card-thumbnail {
@@ -36,6 +39,9 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+    }
+    .card-txt-hover {
+      color: $cool-2;
     }
   }
   &-thumbnail {
@@ -71,5 +77,28 @@
       line-height: 1;
       font-weight: $medium;
     }
+  }
+}
+.card-sell {
+  @extend %card-base;
+  width: 310px;
+  &:hover {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.16);
+    .card-txt-hover {
+      color: $cool-2;
+    }
+  }
+  &-lb {
+    margin-left: -4px;
+    margin-right: -4px;
+    &-item {
+      @include pd-y(4);
+    }
+  }
+  .card-content {
+    padding-bottom: 96px;
+  }
+  .card-thumbnail {
+    width: 310px;
   }
 }

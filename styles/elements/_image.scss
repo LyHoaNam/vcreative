@@ -1,7 +1,16 @@
-  .hero-thumbnail {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 264px;
-    width: $max-width;
-  }
+%base-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-thumbnail {
+  @extend %base-img;
+  height: 264px;
+  width: $max-width;
+}
+.avatar {
+  @extend %base-img;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
