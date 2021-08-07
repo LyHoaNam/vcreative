@@ -14,3 +14,19 @@
   @include fz(16);
   color: $cool-2;
 }
+.txt-el-user {
+  &-name {
+    @include fz(12);
+    color: $level-7;
+    line-height: 14px;
+  }
+  &-note {
+    @include fz(10);
+    color: $cool-1;
+    line-height: 12px;
+  }
+}
+.txt-14-7 {
+  @include fz(14);
+  color: $level-7;
+}
