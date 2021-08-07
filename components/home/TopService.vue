@@ -2,12 +2,18 @@
   <section class="con-horizontal">
     <EleHeadLine title="Top dịch vụ nổi bật" sub="Xem tất cả" href="#" />
     <div class="rel">
-      <swiper ref="swiperNews" :options="swiperOptions">
+      <swiper :options="swiperOptions">
         <swiper-slide
           v-for="(item, index) in listCard"
           :key="`${index}-${Math.random()}-tsv`"
         >
-          <EleCard />
+          <EleCard
+            :img="item.img"
+            :description="item.description"
+            :rate="item.rate"
+            :rate-count="item.rateCount"
+            :amout="item.amout"
+          />
         </swiper-slide>
       </swiper>
       <div slot="button-prev" class="swiper-button-prev" />
@@ -17,10 +23,11 @@
 </template>
 <script>
 import { swiperOptions } from '~/utils/constant.js';
+import { mockListCard } from '~/utils/common.js';
 export default {
   data() {
     return {
-      listCard: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+      listCard: mockListCard(),
       swiperOptions,
     };
   },

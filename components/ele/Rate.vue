@@ -1,17 +1,14 @@
 <template>
-  <div class="align-center">
+  <div class="align-end">
     <div class="flex icon-start-contain">
-      <div
-        v-for="(item, idx) in Math.round(rate)"
+      <eleIcon
+        v-for="(item, idx) in Math.round(rateStart)"
         :key="`${idx}-${Math.random()}-rate`"
-      >
-        <eleIcon
-          :img-url="require('~/assets/images/icon/icon-start.png')"
-          img-class="ic-start"
-        />
-      </div>
+        :img-url="require('~/assets/images/icon/icon-start.png')"
+        img-class="ic-start"
+      />
       <div
-        v-for="(item, idx) in 5 - Math.round(rate)"
+        v-for="(item, idx) in 5 - Math.round(rateStart)"
         :key="`${idx}-${Math.random()}-rate-bl`"
       >
         <eleIcon
@@ -21,7 +18,7 @@
       </div>
     </div>
     <div class="card-rate-txt pl-4 pr-4">
-      {{ Math.round(rate * 10) / 10 }}
+      {{ Math.round(rateStart * 10) / 10 }}
     </div>
     <div class="card-rate-txt-count">({{ countRate }})</div>
   </div>
@@ -29,7 +26,7 @@
 <script>
 export default {
   props: {
-    rate: {
+    rateStart: {
       type: Number,
       require: true,
       default: 5,
