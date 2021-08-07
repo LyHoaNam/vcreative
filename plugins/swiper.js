@@ -1,3 +1,3 @@
-import Swiper from 'swiper';
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Vue from 'vue'
-Vue.use(VTooltip)
+Vue.use(VueAwesomeSwiper)

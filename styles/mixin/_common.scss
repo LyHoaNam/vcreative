@@ -57,3 +57,8 @@
 .block {
   display: block;
 }
+.align-between {
+  @include justify-content(space-between);
+  @include flex();
+  @include align-items(center);
+}

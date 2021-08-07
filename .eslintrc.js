@@ -17,10 +17,11 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "prettier/prettier": "warn",
     semi: ['error', 'always'],
     quotes: ['error', 'single'],
     'no-useless-catch': 'off',
-    'vue/no-v-html': 'on',
+    'vue/no-v-html': '2',
     'no-irregular-whitespace': ['error', { 'skipComments': true }],
     'vue/html-self-closing': ['error', {
       'html': {
