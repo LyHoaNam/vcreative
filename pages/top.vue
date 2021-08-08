@@ -1,16 +1,15 @@
 <template>
   <div>
     <SearchBar />
-    <div class="pt-42 container">
+    <div class="pt-42 pb-24 container">
       <topListCa />
       <homeTopService />
-      <homeTopGraphicService />
-      <homeTopSell />
-      <div class="break-line-contain">
-        <div class="break-line" />
-      </div>
+      <topGraphic />
+      <topWebAndApp />
       <homeTopDraw />
-      <homeMayLiked />
+      <topMedia />
+      <topPrinter />
+      <top3D />
     </div>
   </div>
 </template>
