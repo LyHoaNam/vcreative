@@ -2,7 +2,7 @@
   <div>
     <SearchBar />
     <div class="pt-42 container">
-      <homeHero />
+      <topListCa />
       <homeTopService />
       <homeTopGraphicService />
       <homeTopSell />

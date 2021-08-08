@@ -102,3 +102,19 @@
     width: 310px;
   }
 }
+.category {
+  @include pd-x(8);
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  @include flex();
+  @include align-items(center);
+  @include flex-direction(column);
+  &-thumbnail {
+    width: 179px;
+    height: 153px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
