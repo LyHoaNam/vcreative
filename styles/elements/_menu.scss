@@ -15,6 +15,11 @@ $mn-h: 72px;
   @include pd-y(15);
   height: $mn-h;
 }
+.mn-checked {
+  @include fz(16);
+  font-weight: $medium;
+  color: $cool-2;
+}
 .mn-link {
   @include fz(16);
   font-weight: $medium;
@@ -24,4 +29,12 @@ $mn-h: 72px;
 .mn-mock {
   height: $mn-h;
   width: 100%;
+}
+.mn-icon {
+  width: 24px;
+  height: 24px;
+}
+.mn-avatar {
+  width: 32px;
+  height: 32px;
 }

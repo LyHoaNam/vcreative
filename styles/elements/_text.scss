@@ -30,14 +30,18 @@
   @include fz(14);
   color: $level-7;
 }
+.text-14-n {
+  @include fz(14);
+  color: $level-n;
+}
 .text-16-w2 {
   @include fz(16);
   color: $warm-2;
 }
+.text-16-8 {
+  @include fz(16);
+  color: $level-8;
+}
 .nowrap {
   white-space: nowrap;
-}
-.text-14-n {
-  @include fz(14);
-  color: $level-n;
 }

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <SearchBar />
     <div class="pt-42 container">
       <homeHero />
@@ -13,7 +12,6 @@
       <homeTopDraw />
       <homeMayLiked />
     </div>
-    <Footer />
   </div>
 </template>
 

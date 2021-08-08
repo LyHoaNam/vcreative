@@ -2,7 +2,7 @@
   <nav class="mn-nav">
     <ul class="flex-center">
       <li v-for="(item, index) in lsNav" :key="index" class="mn-li flex-center">
-        <nuxt-link class="mn-link" :to="item.url">{{item.txt}}</nuxt-link>
+        <nuxt-link class="mn-link" :to="item.url">{{ item.txt }}</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -14,7 +14,7 @@ export default {
       lsNav: [
         {
           txt: 'Dịch vụ',
-          url: '#',
+          url: '/top',
         },
         {
           txt: 'Chợ thiết kế',
@@ -41,7 +41,7 @@ export default {
           url: '#',
         },
       ],
-    }
+    };
   },
-}
+};
 </script>
