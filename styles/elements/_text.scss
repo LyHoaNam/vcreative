@@ -34,3 +34,10 @@
   @include fz(16);
   color: $warm-2;
 }
+.nowrap {
+  white-space: nowrap;
+}
+.text-14-n {
+  @include fz(14);
+  color: $level-n;
+}

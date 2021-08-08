@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <SearchBar />
     <div class="pt-42 container">
       <homeHero />
       <homeTopService />
