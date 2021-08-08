@@ -1,12 +1,12 @@
 <template>
-  <section class="con-horizontal">
+  <section class="con-horizontal topgraphicdesign">
     <EleHeadLine
       title="Top Dịch vụ thiết kế đồ họa"
       sub="Xem tất cả"
       href="#"
     />
     <div class="rel">
-      <swiper :options="swiperOptions">
+      <swiper key="topgraphicdesign" :options="swiperOptions">
         <swiper-slide
           v-for="(item, index) in listCard"
           :key="`${index}-${Math.random()}-tsv`"
@@ -31,8 +31,8 @@
           </EleCard>
         </swiper-slide>
       </swiper>
-      <div slot="button-prev" class="swiper-button-prev" />
-      <div slot="button-next" class="swiper-button-next" />
+      <div slot="button-prev" class="swiper-button-prev-topgraphic" />
+      <div slot="button-next" class="swiper-button-next-topgraphic" />
     </div>
   </section>
 </template>
@@ -43,7 +43,13 @@ export default {
   data() {
     return {
       listCard: mockListCard(),
-      swiperOptions,
+      swiperOptions: {
+        ...swiperOptions,
+        navigation: {
+          nextEl: '.swiper-button-next-topgraphic',
+          prevEl: '.swiper-button-prev-topgraphic',
+        },
+      },
     };
   },
 };

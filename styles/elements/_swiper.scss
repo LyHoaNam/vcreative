@@ -22,12 +22,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.swiper-button-next-topsell,
+.swiper-button-next-topgraphic,
+.swiper-button-next-topservice,
 .swiper-button-next {
   @extend %swiper-button;
   background-image: url("~/assets/images/icon/slick_arrow_right.png");
   transform: translate(50%, -50%);
   right: 0;
 }
+.swiper-button-prev-topsell,
+.swiper-button-prev-topgraphic,
+.swiper-button-prev-topservice,
 .swiper-button-prev {
   @extend %swiper-button;
   background-image: url("~/assets/images/icon/slick_arrow_left.png");
