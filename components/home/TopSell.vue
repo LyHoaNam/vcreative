@@ -1,8 +1,8 @@
 <template>
-  <section class="con-horizontal">
+  <section class="con-horizontal topsell">
     <EleHeadLine title="Top bán chạy" sub="Xem tất cả" href="#" />
     <div class="rel">
-      <swiper :options="swiperOptions">
+      <swiper key="topsell" :options="swiperOptions">
         <swiper-slide
           v-for="(item, index) in listCard"
           :key="`${index}-${Math.random()}-tsv`"
@@ -32,8 +32,8 @@
           </EleCardSell>
         </swiper-slide>
       </swiper>
-      <div slot="button-prev" class="swiper-button-prev" />
-      <div slot="button-next" class="swiper-button-next" />
+      <div slot="button-prev" class="swiper-button-prev-topsell" />
+      <div slot="button-next" class="swiper-button-next-topsell" />
     </div>
   </section>
 </template>
@@ -47,6 +47,10 @@ export default {
       swiperOptions: {
         ...swiperOptions,
         slidesPerView: 4,
+        navigation: {
+          nextEl: '.swiper-button-next-topsell',
+          prevEl: '.swiper-button-prev-topsell',
+        },
       },
     };
   },

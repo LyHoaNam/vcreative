@@ -1,8 +1,8 @@
 <template>
-  <section class="con-horizontal">
+  <section class="con-horizontal topdraw">
     <EleHeadLine title="Top dịch vụ vẽ minh họa" sub="Xem tất cả" href="#" />
     <div class="rel">
-      <swiper :options="swiperOptions">
+      <swiper key="topdraw" :options="swiperOptions">
         <swiper-slide
           v-for="(item, index) in listCard"
           :key="`${index}-${Math.random()}-tsv`"
