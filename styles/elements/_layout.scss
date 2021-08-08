@@ -1,0 +1,8 @@
+.row-32-40 {
+  @include m-x(-16);
+  @include m-y(-20);
+}
+.col-32-40 {
+  @include pd-x(16);
+  @include pd-y(20);
+}

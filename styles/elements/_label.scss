@@ -1,0 +1,9 @@
+.label-nm {
+  @include pd-x(1);
+  @include pd-y(3);
+  background-color: $level-3;
+  border-radius: 3px;
+  @include fz(10);
+  line-height: 12px;
+  color: $level-7;
+}
