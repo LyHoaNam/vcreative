@@ -12,3 +12,22 @@
   width: 144px;
   height: 22px;
 }
+.ic-el-user {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.ic-start {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 16px;
+  height: 16px;
+  &-contain {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+}
+.ic-like {
+  width: 24px;
+  height: 24px;
+}

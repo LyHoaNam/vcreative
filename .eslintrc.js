@@ -6,10 +6,11 @@ module.exports = {
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
-    requireConfigFile: false
+    requireConfigFile: false,
   },
   extends: [
     '@nuxtjs',
+    'eslint:recommended',
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended'
   ],
@@ -17,11 +18,10 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "prettier/prettier": "warn",
-    semi: ['error', 'always'],
+    semi: ['warn', 'always'],
     quotes: ['error', 'single'],
     'no-useless-catch': 'off',
-    'vue/no-v-html': '2',
+    'vue/no-v-html': 2,
     'no-irregular-whitespace': ['error', { 'skipComments': true }],
     'vue/html-self-closing': ['error', {
       'html': {

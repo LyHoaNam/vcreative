@@ -24,19 +24,19 @@
     .mt-#{$i} {
       margin-top: $i + px;
     }
-    .p-y-#{$i} {
+    .py-#{$i} {
       padding-left: $i + px;
       padding-right: $i + px;
     }
-    .p-x-#{$i} {
+    .px-#{$i} {
       padding-top: $i + px;
       padding-bottom: $i + px;
     }
-    .m-y-#{$i} {
+    .my-#{$i} {
       margin-left: $i + px;
       margin-right: $i + px;
     }
-    .m-x-#{$i} {
+    .mx-#{$i} {
       margin-top: $i + px;
       margin-bottom: $i + px;
     }
@@ -77,4 +77,7 @@
   margin-right: $value + px;
   margin-top: $value + px;
   margin-bottom: $value + px;
+}
+.pb-106 {
+  padding-bottom: 106px;
 }

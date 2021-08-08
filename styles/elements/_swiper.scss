@@ -1,0 +1,62 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  @include flex();
+  transition-property: transform;
+  box-sizing: content-box;
+}
+%swiper-button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-button-next {
+  @extend %swiper-button;
+  background-image: url("~/assets/images/icon/slick_arrow_right.png");
+  transform: translate(50%, -50%);
+  right: 0;
+}
+.swiper-button-prev {
+  @extend %swiper-button;
+  background-image: url("~/assets/images/icon/slick_arrow_left.png");
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.swiper-button-disabled {
+  opacity: 0;
+}
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 2;
+  bottom: 16px;
+  width: 100%;
+  .swiper-pagination-bullet-active {
+    background-color: $cool-2;
+  }
+}
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  background: $level-1;
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}

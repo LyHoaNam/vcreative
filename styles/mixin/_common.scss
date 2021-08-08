@@ -62,3 +62,6 @@
   @include flex();
   @include align-items(center);
 }
+.rel {
+  position: relative;
+}
