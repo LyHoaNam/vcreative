@@ -31,3 +31,24 @@
   width: 24px;
   height: 24px;
 }
+.ic-filter {
+  @extend %base-img;
+  background-image: url("~/assets/images/icon/icon-filter.png");
+  width: 16px;
+  height: 16px;
+}
+.ic-search {
+  background-image: url("~/assets/images/icon/search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  background-color: $cool-2;
+}
+.ic-favorite {
+  width: 16px;
+  height: 16px;
+}

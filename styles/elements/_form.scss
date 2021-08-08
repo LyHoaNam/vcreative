@@ -1,0 +1,46 @@
+.form-search {
+  &-con {
+    background-color: $level-2;
+    border-radius: 3px;
+    padding-left: 11px;
+    width: 100%;
+  }
+  &-des {
+    padding-right: 26px;
+    height: 20px;
+    border-right: 1px solid $level-4;
+    &::after {
+      content: "";
+    }
+  }
+  &-txt {
+    position: relative;
+    &::after {
+      content: "";
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("~/assets/images/icon/chevron-down.png");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      right: -14px;
+    }
+  }
+  &-ip {
+    width: 100%;
+    height: 20px;
+    @include pd-y(10);
+    border: 0;
+    background-color: $level-2;
+    &::placeholder {
+      @include fz(14);
+      color: $level-5;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
