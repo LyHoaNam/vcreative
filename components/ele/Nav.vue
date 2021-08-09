@@ -14,7 +14,7 @@ export default {
       lsNav: [
         {
           txt: 'Dịch vụ',
-          url: '/top',
+          url: '/services',
         },
         {
           txt: 'Chợ thiết kế',

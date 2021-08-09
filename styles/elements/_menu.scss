@@ -38,3 +38,30 @@ $mn-h: 72px;
   width: 32px;
   height: 32px;
 }
+.mn-sub-nav {
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  &-item {
+    height: 40px;
+    position: relative;
+    color: $level-5;
+    white-space: nowrap;
+    @include fz(14);
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  .sub-nav-active {
+    color: $level-8;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $cool-2;
+    }
+  }
+}
