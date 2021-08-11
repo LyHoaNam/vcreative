@@ -6,3 +6,15 @@
   @include pd-x(16);
   @include pd-y(20);
 }
+.row-des {
+  @include flex();
+}
+.col-left {
+  min-width: 716px;
+  max-width: 716px;
+  width: 100%;
+}
+.col-right {
+  width: 100%;
+  padding-left: 56px;
+}

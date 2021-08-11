@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.swiper-button-next-billboard,
 .swiper-button-next-3D,
 .swiper-button-next-printer,
 .swiper-button-next-media,
@@ -36,6 +37,7 @@
   transform: translate(50%, -50%);
   right: 0;
 }
+.swiper-button-prev-billboard,
 .swiper-button-prev-3D,
 .swiper-button-prev-printer,
 .swiper-button-prev-graphic,
@@ -74,5 +76,26 @@
   background: $level-1;
   &:not(:last-child) {
     margin-right: 16px;
+  }
+}
+.swiper-thumbs {
+  .swiper-slide {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $level-8;
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+  .swiper-slide-active {
+    &::before {
+      content: none;
+    }
   }
 }

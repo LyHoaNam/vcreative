@@ -24,3 +24,13 @@
     padding-bottom: 56px;
   }
 }
+.billboard {
+  @extend %base-img;
+  width: 716px;
+  height: 372px;
+  &-thunbs {
+    @extend %base-img;
+    width: 142px;
+    height: 94px;
+  }
+}

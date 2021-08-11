@@ -6,6 +6,7 @@
   color: $level-0;
   width: 80px;
   height: 40px;
+  cursor: pointer;
 }
 .btn-line {
   @extend .flex-center;
@@ -13,6 +14,16 @@
   @include fz(16);
   border-radius: 3px;
   color: $cool-2;
+  @include pd-y(16);
+  @include pd-x(8);
+  cursor: pointer;
+}
+.btn-line-5 {
+  @extend .flex-center;
+  border: 1px solid $level-5;
+  @include fz(16);
+  border-radius: 3px;
+  color: $level-8;
   @include pd-y(16);
   @include pd-x(8);
   cursor: pointer;

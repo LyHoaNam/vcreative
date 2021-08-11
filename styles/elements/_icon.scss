@@ -52,3 +52,37 @@
   width: 16px;
   height: 16px;
 }
+.ic-clock {
+  background-image: url("~/assets/images/icon/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.ic-edit {
+  background-image: url("~/assets/images/icon/edit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.ic-chevron-right {
+  background-image: url("~/assets/images/icon/chevron-right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: 0.05s all;
+}
+.ic-green-check {
+  background-image: url("~/assets/images/icon/green-check.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: 0.2s all;
+}
