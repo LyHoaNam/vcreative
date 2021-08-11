@@ -8,6 +8,7 @@
         <eleBreadCrumb class="pb-18" />
         <serviceDetailBillboard />
         <serviceDetailDescription />
+        <serviceDetailSupplier />
       </div>
       <div class="col-right">
         <serviceDetailInforBlock />

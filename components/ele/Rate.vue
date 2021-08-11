@@ -1,6 +1,6 @@
 <template>
   <div class="align-end">
-    <div class="flex icon-start-contain">
+    <div class="flex ic-start-contain">
       <eleIcon
         v-for="(item, idx) in 5"
         :key="`${idx}-${Math.random()}-rate`"

@@ -60,6 +60,10 @@
     color: $level-8;
     font-weight: $medium;
   }
+  &-6 {
+    @include fz(16);
+    color: $level-6;
+  }
   &-6-m {
     @include fz(16);
     color: $level-6;
@@ -70,6 +74,13 @@
     color: $cool-2;
   }
 }
+.text-20 {
+  &-n-0 {
+    @include fz(20);
+    color: $level-n;
+    font-weight: $medium;
+  }
+}
 .nowrap {
   white-space: nowrap;
 }
@@ -77,4 +88,9 @@
   @include fz(32);
   color: $level-8;
   font-weight: $medium;
+}
+.text-des {
+  p {
+    min-height: 14px;
+  }
 }
