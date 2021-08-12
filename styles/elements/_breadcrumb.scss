@@ -1,0 +1,30 @@
+.breadcrumb {
+  @include flex();
+  &-item {
+    &:not(:last-child) {
+      padding-right: 32px;
+      position: relative;
+      &::after {
+        content: "";
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("~/assets/images/icon/chevron-right.png");
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+      }
+      a {
+        color: $cool-2;
+        @include fz(16);
+      }
+    }
+    &:last-child {
+      color: $level-7;
+      @include fz(16);
+    }
+  }
+}

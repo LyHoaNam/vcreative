@@ -1,0 +1,33 @@
+.p-s-d-feedback {
+  margin-bottom: 100px;
+  &-rate {
+    .ic-start {
+      width: 30px;
+      height: 30px;
+    }
+    .card-rate-txt, .card-rate-txt-count {
+      @include fz(20);
+    }
+  }
+  &-hr {
+    @include m-x(48);
+    width: 100%;
+    height: 1px;
+    background-color: $level-3;
+  }
+  &-cm-rate {
+    .card-rate-txt {
+      @include fz(16);
+    }
+  }
+  &-cmt {
+    border-bottom: 1px solid $level-3;
+    margin-bottom: 48px;
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+  &-see-more {
+    margin-bottom: 54px;
+  }
+}

@@ -45,6 +45,11 @@
     @include align-items(center);
   }
 }
+.col-center {
+  @include justify-content(center);
+  @include flex-direction(column);
+  @include flex();
+}
 .flex-between {
   @include justify-content(space-between);
   @include flex();

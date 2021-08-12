@@ -26,22 +26,82 @@
     line-height: 12px;
   }
 }
-.txt-14-7 {
-  @include fz(14);
-  color: $level-7;
+.text-14 {
+  &-7 {
+    @include fz(14);
+    color: $level-7;
+  }
+  &-n {
+    @include fz(14);
+    color: $level-n;
+  }
+  &-8 {
+    @include fz(14);
+    color: $level-8;
+  }
+  &-8-m {
+    @include fz(14);
+    color: $level-8;
+    font-weight: $medium;
+  }
+  &-5 {
+    @include fz(14);
+    color: $level-5;
+  }
 }
-.text-14-n {
-  @include fz(14);
-  color: $level-n;
+
+.text-16 {
+  &-w2 {
+    @include fz(16);
+    color: $warm-2;
+  }
+  &-8 {
+    @include fz(16);
+    color: $level-8;
+  }
+  &-8-m {
+    @include fz(16);
+    color: $level-8;
+    font-weight: $medium;
+  }
+  &-6 {
+    @include fz(16);
+    color: $level-6;
+  }
+  &-6-m {
+    @include fz(16);
+    color: $level-6;
+    font-weight: $medium;
+  }
+  &-c2 {
+    @include fz(16);
+    color: $cool-2;
+  }
+  &-7 {
+    @include fz(16);
+    color: $level-7;
+  }
 }
-.text-16-w2 {
-  @include fz(16);
-  color: $warm-2;
-}
-.text-16-8 {
-  @include fz(16);
-  color: $level-8;
+.text-20 {
+  &-n-0 {
+    @include fz(20);
+    color: $level-n;
+    font-weight: $medium;
+  }
 }
 .nowrap {
   white-space: nowrap;
+}
+.text-32-8-m {
+  @include fz(32);
+  color: $level-8;
+  font-weight: $medium;
+}
+.text-des {
+  p {
+    min-height: 14px;
+  }
+}
+.text-center {
+  text-align: center;
 }

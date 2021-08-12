@@ -1,0 +1,49 @@
+.tb-package {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 77px;
+  &-head {
+    background-color: $level-2;
+  }
+  &-th {
+    border-left: 1px solid #ebecf0;
+    border-right: 1px solid #ebecf0;
+    text-align: center;
+    @include pd-x(26);
+    &.first {
+      min-width: 116px;
+      width: 116px;
+    }
+  }
+  &-td {
+    border: 1px solid #ebecf0;
+    padding: 8px;
+    color: $level-7;
+    &:first-child {
+      padding: 20px;
+    }
+  }
+  &-tr-first {
+    min-height: 220px;
+    height: 220px;
+  }
+  &-center {
+    margin: auto;
+    display: inline;
+  }
+  .ic-checked {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+  }
+  .cell-center {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+  }
+  &-btn {
+    width: 161px;
+    height: 48px;
+    margin: auto auto 10px auto;
+  }
+}

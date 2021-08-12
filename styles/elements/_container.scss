@@ -11,3 +11,8 @@
   height: 264px;
   padding-bottom: 72px;
 }
+.container-sm {
+  max-width: $max-width-sm;
+  margin: auto;
+  width: 100%;
+}

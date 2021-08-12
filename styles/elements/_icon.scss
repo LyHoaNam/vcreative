@@ -18,13 +18,22 @@
   border-radius: 50%;
 }
 .ic-start {
-  padding-left: 3px;
-  padding-right: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2px;
+  padding-right: 2px;
   width: 16px;
   height: 16px;
   &-contain {
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+.ic-img-start {
+  background-image: url("~/assets/images/icon/icon-start.png");
+  &-black {
+    background-image: url("~/assets/images/icon/icon-start-black.png");
   }
 }
 .ic-like {
@@ -51,4 +60,45 @@
 .ic-favorite {
   width: 16px;
   height: 16px;
+}
+.ic-clock {
+  background-image: url("~/assets/images/icon/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.ic-edit {
+  background-image: url("~/assets/images/icon/edit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+.ic-chevron-right {
+  background-image: url("~/assets/images/icon/chevron-right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: 0.05s all;
+}
+%base-ic-check {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: 0.2s all;
+}
+.ic-green-check {
+  @extend %base-ic-check;
+  background-image: url("~/assets/images/icon/green-check.png");
+}
+.ic-gray-check {
+  @extend %base-ic-check;
+  background-image: url("~/assets/images/icon/uncheck.png");
 }

@@ -3,7 +3,7 @@
     <div class="card-thumbnail" :style="{ backgroundImage: `url(${img})` }" />
     <div class="card-content">
       <slot name="user" />
-      <p class="txt-14-7 mt-6 mb-8 card-txt-hover">
+      <p class="text-14-7 mt-6 mb-8 card-txt-hover">
         {{ description }}
       </p>
       <div class="card-bot">
@@ -20,7 +20,7 @@
         </div>
         <slot name="rate" />
         <div class="align-between mt-16">
-          <p class="txt-14-7 text-16-w2">
+          <p class="text-14-7 text-16-w2">
             <span class="font-bold">{{ amount.toLocaleString('de-VI') }}</span>
           </p>
           <eleIcon

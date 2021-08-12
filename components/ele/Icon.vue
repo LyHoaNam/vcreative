@@ -9,28 +9,28 @@ export default {
     imgClass: {
       type: String,
       require: false,
-      default: 'icon-con'
+      default: 'icon-con',
     },
     imgUrl: {
       type: String,
       require: true,
-      default: ''
+      default: '',
     },
     imgAlt: {
       type: String,
       require: false,
-      default: 'icon'
+      default: 'icon',
     },
     imgW: {
       type: Number,
       require: false,
-      default: 10
+      default: 10,
     },
     imgH: {
       type: Number,
       require: false,
-      default: 10
-    }
-  }
-}
+      default: 10,
+    },
+  },
+};
 </script>

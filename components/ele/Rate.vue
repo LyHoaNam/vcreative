@@ -1,21 +1,25 @@
 <template>
   <div class="align-end">
-    <div class="flex icon-start-contain">
-      <eleIcon
-        v-for="(item, idx) in 5"
-        :key="`${idx}-${Math.random()}-rate`"
-        :img-url="
-          require(`~/assets/images/icon/icon-start${
-            isSell ? '-black' : ''
-          }.png`)
-        "
-        img-class="ic-start"
-      />
+    <div class="flex ic-start-contain">
+      <div v-if="roundStart > 0" class="flex">
+        <div
+          v-for="(start, idx) in roundStart"
+          :key="`${idx}-start-bl`"
+          class="ic-start ic-img-start"
+        />
+      </div>
+      <div v-if="blackStart > 0" class="flex">
+        <div
+          v-for="(start, idx) in blackStart"
+          :key="`${idx}-start-bl`"
+          class="ic-start ic-img-start-black"
+        />
+      </div>
     </div>
-    <div class="card-rate-txt pl-4 pr-4">
+    <p class="card-rate-txt ml-8 pr-4">
       {{ Math.round(rateStart * 10) / 10 }}
-    </div>
-    <div class="card-rate-txt-count">({{ countRate }})</div>
+    </p>
+    <p v-if="countRate" class="card-rate-txt-count">({{ countRate }})</p>
   </div>
 </template>
 <script>
@@ -28,13 +32,24 @@ export default {
     },
     countRate: {
       type: Number,
-      require: true,
+      require: false,
       default: 0,
     },
     isSell: {
       type: Boolean,
       require: false,
       default: false,
+    },
+  },
+  computed: {
+    roundStart() {
+      return Math.round(this.rateStart);
+    },
+    blackStart() {
+      if (!this.rateStart) {
+        return 0;
+      }
+      return 5 - Math.round(this.rateStart);
     },
   },
 };
