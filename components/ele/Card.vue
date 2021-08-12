@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <nuxt-link :to="url" class="card block">
     <div class="card-thumbnail" :style="{ backgroundImage: `url(${img})` }" />
     <div class="card-content">
       <slot name="user" />
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 <script>
 export default {
@@ -40,6 +40,11 @@ export default {
       type: Number,
       require: true,
       default: 0,
+    },
+    url: {
+      type: String,
+      require: false,
+      default: '/services/1',
     },
   },
   data() {
