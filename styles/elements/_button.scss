@@ -28,3 +28,8 @@
   @include pd-x(8);
   cursor: pointer;
 }
+.btn-see-more {
+  cursor: pointer;
+  @include fz(16);
+  color: $cool-2;
+}

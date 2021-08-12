@@ -7,3 +7,44 @@
   line-height: 12px;
   color: $level-7;
 }
+%base-lb-fb {
+  @include pd-x(4);
+  @include pd-y(12);
+  @include fz(16);
+  display: block;
+  cursor: pointer;
+}
+.label-fb {
+  @extend %base-lb-fb;
+  border: 1px solid $level-4;
+  color: $level-8;
+  &-item {
+    padding: 4px;
+  }
+  &-con {
+    @include flex;
+    @include flex-wrap(wrap);
+    margin: -4px;
+  }
+}
+.label-fb-active {
+  @extend %base-lb-fb;
+  border: 1px solid $warm-2;
+  color: $warm-2;
+}
+.label-rel {
+  @include pd-x(7);
+  @include pd-y(12);
+  background-color: $level-3;
+  border-radius: 3px;
+  @include fz(14);
+  line-height: 14px;
+  color: $level-7;
+  cursor: pointer;
+  &-item {
+    padding: 16px;
+  }
+  &-con {
+    margin: -16px;
+  }
+}

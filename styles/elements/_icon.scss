@@ -18,13 +18,22 @@
   border-radius: 50%;
 }
 .ic-start {
-  padding-left: 3px;
-  padding-right: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 2px;
+  padding-right: 2px;
   width: 16px;
   height: 16px;
   &-contain {
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+}
+.ic-img-start {
+  background-image: url("~/assets/images/icon/icon-start.png");
+  &-black {
+    background-image: url("~/assets/images/icon/icon-start-black.png");
   }
 }
 .ic-like {
