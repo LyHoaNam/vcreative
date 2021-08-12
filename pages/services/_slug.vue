@@ -9,6 +9,7 @@
         <serviceDetailBillboard />
         <serviceDetailDescription />
         <serviceDetailSupplier />
+        <serviceDetailPackage />
       </div>
       <div class="col-right">
         <serviceDetailInforBlock />

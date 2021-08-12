@@ -77,12 +77,19 @@
   height: 24px;
   transition: 0.05s all;
 }
-.ic-green-check {
-  background-image: url("~/assets/images/icon/green-check.png");
+%base-ic-check {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
   transition: 0.2s all;
+}
+.ic-green-check {
+  @extend %base-ic-check;
+  background-image: url("~/assets/images/icon/green-check.png");
+}
+.ic-gray-check {
+  @extend %base-ic-check;
+  background-image: url("~/assets/images/icon/uncheck.png");
 }

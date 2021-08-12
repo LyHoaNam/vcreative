@@ -1,0 +1,45 @@
+.ip-check-con {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  @include fz(16);
+  color: $level-8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+}
+.ip-check-checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 1px solid $level-3;
+}
+.ip-check-con:hover input ~ .ip-check-checkmark {
+  background-color: rgba($color: $cool-2, $alpha: 0.1);
+}
+.ip-check-con input:checked ~ .ip-check-checkmark {
+  border: 1px solid $cool-2;
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: $cool-2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

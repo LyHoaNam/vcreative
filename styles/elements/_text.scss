@@ -73,6 +73,10 @@
     @include fz(16);
     color: $cool-2;
   }
+  &-7 {
+    @include fz(16);
+    color: $level-7;
+  }
 }
 .text-20 {
   &-n-0 {
@@ -93,4 +97,7 @@
   p {
     min-height: 14px;
   }
+}
+.text-center {
+  text-align: center;
 }
