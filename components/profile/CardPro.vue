@@ -21,7 +21,7 @@
         <div class="ic-flat" />
         <p class="text-14-6 ml-7">Báo cáo</p>
       </div>
-      <button class="btn-primary card-pro-btn">Báo cáo</button>
+      <button class="btn-primary card-pro-btn">Liên hệ tôi</button>
     </div>
     <div class="mt-42 align-between mb-16">
       <div class="align-center">

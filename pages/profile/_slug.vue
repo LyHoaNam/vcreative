@@ -2,7 +2,8 @@
   <div class="container pt-56">
     <div class="row-pro pb-106">
       <div class="col-pro-left">
-        <profileCardPro />
+        <profileCardPro class="mb-32" />
+        <profileCardDes />
       </div>
       <div class="col-pro-right">
         <EleHeadLine

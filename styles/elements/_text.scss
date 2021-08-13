@@ -97,6 +97,11 @@
     color: $level-n;
     font-weight: $medium;
   }
+  &-8-m {
+    @include fz(20);
+    color: $level-8;
+    font-weight: $medium;
+  }
 }
 .nowrap {
   white-space: nowrap;
