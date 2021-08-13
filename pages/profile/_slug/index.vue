@@ -9,9 +9,9 @@
         <EleHeadLine
           title="Các dịch vụ cung cấp"
           sub="Xem tất cả"
-          href="/profile/service/123"
+          href="/profile/123/service"
         />
-        <div class="row row-32-40 card-w100">
+        <div class="row row-32-40 p-p-card">
           <div
             v-for="(item, index) in listCard"
             :key="`${index}-service-supplies`"
@@ -40,10 +40,10 @@
         <EleHeadLine
           title="Các sản phẩm đang bán"
           sub="Xem tất cả"
-          href="/profile/service/123"
+          href="/profile/123/product"
           class="mt-78"
         />
-        <div class="row row-32-40 card-w100">
+        <div class="row row-32-40 p-p-card-sell">
           <div
             v-for="(item, index) in listCardSell"
             :key="`${index}-service-supplies`"

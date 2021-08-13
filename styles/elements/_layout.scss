@@ -31,3 +31,7 @@
     width: 100%;
   }
 }
+.col-special-5 {
+  @include flex-basis(20%);
+  max-width: 20%;
+}

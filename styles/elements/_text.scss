@@ -59,13 +59,9 @@
     @include fz(16);
     color: $warm-2;
   }
-  &-8 {
+  &-5-m {
     @include fz(16);
-    color: $level-8;
-  }
-  &-8-m {
-    @include fz(16);
-    color: $level-8;
+    color: $level-5;
     font-weight: $medium;
   }
   &-6 {
@@ -88,6 +84,15 @@
   &-7-m {
     @include fz(16);
     color: $level-7;
+    font-weight: $medium;
+  }
+  &-8 {
+    @include fz(16);
+    color: $level-8;
+  }
+  &-8-m {
+    @include fz(16);
+    color: $level-8;
     font-weight: $medium;
   }
 }
