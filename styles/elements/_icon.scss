@@ -102,3 +102,34 @@
   @extend %base-ic-check;
   background-image: url("~/assets/images/icon/uncheck.png");
 }
+.ic-flat {
+  background-image: url("~/assets/images/icon/flat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 16px;
+}
+%ic-pro-base {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+}
+.ic-pro-clock {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/clock-full.png");
+}
+.ic-pro-map {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/map-pin.png");
+}
+.ic-pro-profile {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/profile.png");
+}
+.ic-pro-tran {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/transaction.png");
+}

@@ -48,14 +48,13 @@ export const mockCard = () => {
   };
 };
 
-export const mockListCard = () => {
+export const mockListCard = (limit = 15) => {
   const result = [];
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < limit; i++) {
     result.push(mockCard());
   }
   return JSON.parse(JSON.stringify(result));
 };
-
 export const mockCardSell = () => {
   return {
     img: mockImg[ramBetween(0, 7)],
@@ -70,9 +69,9 @@ export const mockCardSell = () => {
   };
 };
 
-export const mockListCardSell = () => {
+export const mockListCardSell = (limit = 15) => {
   const result = [];
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < limit; i++) {
     result.push(mockCardSell());
   }
   return JSON.parse(JSON.stringify(result));

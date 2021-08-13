@@ -2,3 +2,23 @@
   border: 1px solid $level-3;
   @include pd-x(10);
 }
+.bar-profile {
+  width: 100%;
+  height: 63px;
+  @include pd-y(16);
+  border: 1px solid $level-3;
+  &-tab {
+    height: 63px;
+    cursor: pointer;
+    user-select: none;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .bar-active {
+    border-bottom: 3px solid $cool-2;
+    p {
+      color: $level-8;
+    }
+  }
+}

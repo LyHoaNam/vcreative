@@ -1,20 +1,22 @@
 <template>
   <div class="align-end">
     <div class="flex ic-start-contain">
-      <div v-if="roundStart > 0" class="flex">
-        <div
-          v-for="(start, idx) in roundStart"
-          :key="`${idx}-start-bl`"
-          class="ic-start ic-img-start"
-        />
-      </div>
-      <div v-if="blackStart > 0" class="flex">
-        <div
-          v-for="(start, idx) in blackStart"
-          :key="`${idx}-start-bl`"
-          class="ic-start ic-img-start-black"
-        />
-      </div>
+      <client-only>
+        <div v-if="roundStart > 0" class="flex">
+          <div
+            v-for="(start, idx) in roundStart"
+            :key="`${idx}-start-bl`"
+            class="ic-start ic-img-start"
+          />
+        </div>
+        <div v-if="blackStart > 0" class="flex">
+          <div
+            v-for="(start, idx) in blackStart"
+            :key="`${idx}-start-bl`"
+            class="ic-start ic-img-start-black"
+          />
+        </div>
+      </client-only>
     </div>
     <p class="card-rate-txt ml-8 pr-4">
       {{ Math.round(rateStart * 10) / 10 }}

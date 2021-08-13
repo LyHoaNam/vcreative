@@ -12,7 +12,7 @@
         <div class="align-between">
           <div>
             <div class="align-center">
-              <p class="text-20-n-0 bl-supplier-name">TaQuocBao</p>
+              <p class="text-20-n-m bl-supplier-name">TaQuocBao</p>
               <p class="text-16-6">Đà Nẵng</p>
             </div>
             <p class="text-16-6 mb-8">Graphic designer</p>
