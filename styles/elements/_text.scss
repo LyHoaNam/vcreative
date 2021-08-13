@@ -27,10 +27,6 @@
   }
 }
 .text-14 {
-  &-7 {
-    @include fz(14);
-    color: $level-7;
-  }
   &-n {
     @include fz(14);
     color: $level-n;
@@ -43,6 +39,14 @@
     @include fz(14);
     color: $level-8;
     font-weight: $medium;
+  }
+  &-7 {
+    @include fz(14);
+    color: $level-7;
+  }
+  &-6 {
+    @include fz(14);
+    color: $level-6;
   }
   &-5 {
     @include fz(14);
@@ -81,9 +85,14 @@
     @include fz(16);
     color: $level-7;
   }
+  &-7-m {
+    @include fz(16);
+    color: $level-7;
+    font-weight: $medium;
+  }
 }
 .text-20 {
-  &-n-0 {
+  &-n-m {
     @include fz(20);
     color: $level-n;
     font-weight: $medium;
@@ -104,4 +113,28 @@
 }
 .text-center {
   text-align: center;
+}
+.tt-status {
+  &-online {
+    @include fz(14);
+    color: $cool-1;
+    padding-left: 17px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $cool-1;
+      left: 0;
+      top: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.line-h-1 {
+  line-height: 1;
 }

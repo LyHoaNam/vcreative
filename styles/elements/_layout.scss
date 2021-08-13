@@ -18,3 +18,16 @@
   width: 100%;
   padding-left: 56px;
 }
+.row-pro {
+  @include flex();
+}
+.col-pro {
+  &-left {
+    width: 437px;
+    min-width: 437px;
+  }
+  &-right {
+    padding-left: 111px;
+    width: 100%;
+  }
+}

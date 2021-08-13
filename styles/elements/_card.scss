@@ -118,3 +118,40 @@
     background-repeat: no-repeat;
   }
 }
+.card-pro {
+  border: 1px solid $level-4;
+  border-radius: 3px;
+  padding: 32px 32px 46px 32px;
+  position: relative;
+  .card-pro-like {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 16px;
+    right: 24px;
+    cursor: pointer;
+  }
+  &-content {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $level-4;
+  }
+  &-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      object-fit: cover
+    }
+  }
+  &-rate {
+    .card-rate-txt {
+      @include fz(14);
+    }
+  }
+  &-btn {
+    width: 187px;
+    height: 40px;
+    margin-top: 32px;
+  }
+}
