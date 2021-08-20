@@ -7,6 +7,10 @@
   width: 80px;
   height: 40px;
   cursor: pointer;
+  &:disabled {
+    background-color: $level-5;
+    cursor: not-allowed;
+  }
 }
 .btn-line {
   @extend .flex-center;
@@ -32,4 +36,53 @@
   cursor: pointer;
   @include fz(16);
   color: $cool-2;
+}
+.btn-fb {
+  @extend .flex-center;
+  width: 336px;
+  height: 50px;
+  background: #4267b2;
+  border-radius: 3px;
+  color: $level-0;
+  @include fz(16);
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    background-image: url('~/assets/images/icon/facebook.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32px;
+  }
+}
+.btn-google {
+  @extend .flex-center;
+  width: 336px;
+  height: 50px;
+  background: $level-0;
+  border: 1px solid $level-3;
+  border-radius: 3px;
+  color: $level-6;
+  @include fz(16);
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    background-image: url('~/assets/images/icon/google.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32px;
+  }
 }

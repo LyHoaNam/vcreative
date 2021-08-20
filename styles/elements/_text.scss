@@ -52,6 +52,10 @@
     @include fz(14);
     color: $level-5;
   }
+  &-c2 {
+    @include fz(14);
+    color: $cool-2
+  }
 }
 
 .text-16 {
@@ -104,6 +108,13 @@
   }
   &-8-m {
     @include fz(20);
+    color: $level-8;
+    font-weight: $medium;
+  }
+}
+.text-24 {
+  &-8-m {
+    @include fz(24);
     color: $level-8;
     font-weight: $medium;
   }
