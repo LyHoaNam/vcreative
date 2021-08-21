@@ -71,6 +71,7 @@
 import { validateEmail } from '~/utils/common.js';
 export default {
   name: 'Login',
+  middleware: 'auth',
   data() {
     return {
       isShowPass: false,
@@ -126,7 +127,7 @@ export default {
     },
     handleSubmit() {
       this.$modal.hide('Login');
-      console.log('submit');
+      this.$router.push({ path: '/top' });
     },
     handleClickSignin() {
       this.$modal.show('SignIn');

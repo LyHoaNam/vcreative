@@ -62,6 +62,12 @@ export default {
         codeChallengeMethod: 'S256',
       },
     },
+    redirect: {
+      login: '/',
+      logout: '/',
+      callback: '/services',
+      home: '/services',
+    },
   },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
