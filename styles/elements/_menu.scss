@@ -65,3 +65,38 @@ $mn-h: 72px;
     }
   }
 }
+.mn-step {
+  &-item {
+    height: $mn-h;
+    padding-right: 28px;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("~/assets/images/icon/mn-step-chevron.png");
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      right: 0;
+      top: 50%;
+    }
+  }
+  &-icon {
+    width: 32px;
+    height: 32px;
+    background-color: $level-4;
+    border-radius: 50%;
+    @include flex();
+    @include justify-content(center);
+    @include align-items(center);
+    color: $level-0;
+    @include fz(16);
+    font-weight: $medium;
+  }
+}

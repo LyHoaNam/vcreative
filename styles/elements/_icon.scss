@@ -141,3 +141,18 @@
   @extend %ic-pro-base;
   background-image: url("~/assets/images/icon/eye-off.png");
 }
+%base-ic-co-intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21.49px;
+  height: 24px;
+}
+.ic-co-intro-should-be {
+  @extend %base-ic-co-intro;
+  background-image: url("~/assets/images/icon/emoji-like.png");
+}
+.ic-co-intro-did-not {
+  @extend %base-ic-co-intro;
+  background-image: url("~/assets/images/icon/emoji-dislike.png");
+}

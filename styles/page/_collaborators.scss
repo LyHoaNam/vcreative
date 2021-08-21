@@ -1,0 +1,38 @@
+.co-intro {
+  margin-top: 88px;
+  &-ic {
+    width: 60px;
+    height: 57px;
+  }
+  &-des {
+    max-width: 172px;
+  }
+  &-col-left {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      background-color: #D8D7DA;
+      height: calc(100% - 50px);
+    }
+  }
+  &-col-item {
+    margin-bottom: 74px;
+  }
+  &-item-r {
+    @include flex();
+    @include flex-direction(column);
+    @include align-items(flex-end);
+  }
+  &-title-not {
+    margin-left: 176px;
+  }
+  &-btn-continue {
+    width: 200px;
+    height: 48px;
+    float: right;
+  }
+}
