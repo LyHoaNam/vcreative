@@ -77,6 +77,10 @@
     @include fz(16);
     color: $warm-2;
   }
+  &-5 {
+    @include fz(16);
+    color: $level-5;
+  }
   &-5-m {
     @include fz(16);
     color: $level-5;
@@ -133,13 +137,26 @@
     font-weight: $medium;
   }
 }
+.text-32 {
+  &-8 {
+    color: $level-8;
+    @include fz(32);
+  }
+}
 .nowrap {
   white-space: nowrap;
 }
-.text-32-8-m {
-  @include fz(32);
-  color: $level-8;
-  font-weight: $medium;
+.text-32 {
+  &-8-m {
+    @include fz(32);
+    color: $level-8;
+    font-weight: $medium;
+  }
+  &-8-b {
+    @include fz(32);
+    color: $level-8;
+    font-weight: $bold;
+  }
 }
 .text-des {
   p {
