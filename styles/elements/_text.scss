@@ -54,7 +54,11 @@
   }
   &-c2 {
     @include fz(14);
-    color: $cool-2
+    color: $cool-2;
+  }
+  &-w1 {
+    @include fz(14);
+    color: $warm-1;
   }
 }
 
