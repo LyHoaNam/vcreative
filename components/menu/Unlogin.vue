@@ -1,10 +1,23 @@
 <template>
-  <ul class="flex-center">
-    <li class="mn-li flex-center">
-      <nuxt-link class="mn-link" to="#">Trở thành cộng tác viên</nuxt-link>
-    </li>
-    <li class="mn-li flex-center">
-      <button class="btn-line">Đăng nhập</button>
-    </li>
-  </ul>
+  <div>
+    <ul class="flex-center">
+      <li class="mn-li flex-center">
+        <nuxt-link class="mn-link" to="#">Trở thành cộng tác viên</nuxt-link>
+      </li>
+      <li class="mn-li flex-center">
+        <button class="btn-line" @click="handleLogin">Đăng nhập</button>
+      </li>
+    </ul>
+    <modalLogin />
+    <modalSignin />
+  </div>
 </template>
+<script>
+export default {
+  methods: {
+    handleLogin() {
+      this.$modal.show('Login');
+    },
+  },
+};
+</script>

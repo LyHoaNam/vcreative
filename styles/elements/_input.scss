@@ -10,11 +10,10 @@
   -ms-user-select: none;
   user-select: none;
   input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
 }
 .ip-check-checkmark {
   position: absolute;
@@ -41,5 +40,52 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+.ip-box-con {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  @include fz(14);
+  color: $level-8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.ip-box-checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  border: 1px solid $level-3;
+}
+.ip-box-con:hover input ~ .ip-box-checkmark {
+  background-color: rgba($color: $cool-2, $alpha: 0.1);
+}
+.ip-box-con input:checked ~ .ip-box-checkmark {
+  border: 1px solid $cool-2;
+  &::before {
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 5px;
+    height: 9px;
+    border: 2px solid $cool-2;
+    border-top: 0;
+    border-left: 0;
+    left: 4px;
+    top: 1px;
+    position: absolute;
   }
 }

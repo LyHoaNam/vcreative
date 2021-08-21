@@ -133,3 +133,11 @@
   @extend %ic-pro-base;
   background-image: url("~/assets/images/icon/transaction.png");
 }
+.ic-eye {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/eye.png");
+}
+.ic-eye-off {
+  @extend %ic-pro-base;
+  background-image: url("~/assets/images/icon/eye-off.png");
+}
