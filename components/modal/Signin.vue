@@ -1,7 +1,7 @@
 <template>
   <client-only>
-    <modal name="Login" classes="modal-login" width="400px" height="auto">
-      <p class="text-24-8-m text-center mb-32">Đăng nhập</p>
+    <modal name="SignIn" classes="modal-login" width="400px" height="auto">
+      <p class="text-24-8-m text-center mb-32">Đăng ký</p>
       <button class="btn-fb mb-8" @click="handleFb">
         Tiếp tục bằng Facbook
       </button>
@@ -19,10 +19,10 @@
           @focus="isFocusEmail = true"
           @blur="isFocusEmail = false"
         />
-        <p v-if="!isFocusEmail" class="pb-8 text-14-w1 mt-ne-4">
+        <p v-if="!isFocusEmail && messEmail" class="pb-8 text-14-w1 mt-ne-4">
           {{ messEmail }}
         </p>
-        <div class="rel mb-4">
+        <div class="rel mb-8">
           <input
             v-model="valuePass"
             :type="isShowPass ? 'text' : 'password'"
@@ -38,30 +38,47 @@
             @click="isShowPass = !isShowPass"
           />
         </div>
-        <p v-if="!isFocusPas" class="pb-16 text-14-w1">
+        <p v-if="!isFocusPas && messPass" class="pb-8 text-14-w1 mt-ne-4">
           {{ messPass }}
+        </p>
+        <div class="rel mb-16">
+          <input
+            v-model="valueConfirm"
+            :type="isShowConfirm ? 'text' : 'password'"
+            size="30"
+            class="input-pass"
+            placeholder="Xác nhận mật khẩu"
+            autocomplete="current-password"
+            @focus="isFocusCofirm = true"
+            @blur="isFocusCofirm = false"
+          />
+          <label
+            :class="`input-pass-ic ic-eye${isShowConfirm ? '' : '-off'}`"
+            @click="isShowConfirm = !isShowConfirm"
+          />
+        </div>
+        <p
+          v-if="!isFocusCofirm && messConfirm"
+          class="pb-16 text-14-w1 mt-ne-14"
+        >
+          {{ messConfirm }}
         </p>
         <button
           class="btn-primary mb-12"
-          :disabled="!isMailCorrect || !isPassCorrect"
+          :disabled="!isMailCorrect || !isPassCorrect || !isConfirmCorrect"
         >
-          Đăng nhập
+          Đăng ký
         </button>
-        <div class="align-between">
-          <label class="ip-box-con">
-            Ghi nhớ mật khẩu
-            <input type="checkbox" name="save-login" class="ip-box-login" />
-            <span class="ip-box-checkmark" />
-          </label>
-          <label class="pointer text-14-c2">Quên mật khẩu?</label>
-        </div>
+        <p class="text-12-6 text-center">
+          Khi Đăng ký bạn đã đồng ý
+          <span class="text-12-c2 pointer">Điều khoản Dịch vụ</span> của
+          VCreative và nhận email từ chúng tôi
+        </p>
       </form>
       <p class="text-14-8 text-center">
-        Chưa có tài khoản?<span
-          class="text-14-c2 pointer"
-          @click="handleClickSignin"
-        >
-          Đăng ký ngay</span
+        Bạn đã có tài khoản?
+        <span class="text-14-c2 pointer" @click="handleClickLogin"
+          >Đăng nhập ngay</span
         >
       </p>
     </modal>
@@ -70,18 +87,23 @@
 <script>
 import { validateEmail } from '~/utils/common.js';
 export default {
-  name: 'Login',
+  name: 'SignIn',
   data() {
     return {
       isShowPass: false,
+      isShowConfirm: false,
       valueEmail: '',
       valuePass: '',
+      valueConfirm: '',
       messEmail: '',
       messPass: '',
+      messConfirm: '',
       isMailCorrect: false,
       isPassCorrect: false,
+      isConfirmCorrect: false,
       isFocusEmail: true,
       isFocusPas: true,
+      isFocusCofirm: true,
     };
   },
   watch: {
@@ -112,6 +134,18 @@ export default {
       },
       deep: true,
     },
+    valueConfirm: {
+      handler(value) {
+        if (value !== this.valuePass) {
+          this.messConfirm = 'Mật khẩu xác nhận chưa khớp';
+          this.isConfirmCorrect = false;
+        } else {
+          this.messConfirm = '';
+          this.isConfirmCorrect = true;
+        }
+      },
+      deep: true,
+    },
   },
   methods: {
     handleFb() {
@@ -125,11 +159,11 @@ export default {
       });
     },
     handleSubmit() {
-      this.$modal.hide('Login');
-      console.log('submit');
+      this.$modal.hide('SignIn');
     },
-    handleClickSignin() {
-      this.$modal.show('SignIn');
+    handleClickLogin() {
+      this.$modal.hide('SignIn');
+      this.$modal.show('Login');
     },
   },
 };

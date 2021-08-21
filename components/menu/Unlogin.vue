@@ -9,6 +9,7 @@
       </li>
     </ul>
     <modalLogin />
+    <modalSignin />
   </div>
 </template>
 <script>

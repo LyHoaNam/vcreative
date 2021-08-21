@@ -26,6 +26,16 @@
     line-height: 12px;
   }
 }
+.text-12 {
+  &-6 {
+    @include fz(12);
+    color: $level-6;
+  }
+  &-c2 {
+    @include fz(12);
+    color: $cool-2;
+  }
+}
 .text-14 {
   &-n {
     @include fz(14);
