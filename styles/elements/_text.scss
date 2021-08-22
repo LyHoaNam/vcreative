@@ -152,6 +152,10 @@
   }
 }
 .text-32 {
+  &-6 {
+    color: $level-6;
+    @include fz(32);
+  }
   &-8 {
     color: $level-8;
     @include fz(32);

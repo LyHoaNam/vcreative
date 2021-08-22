@@ -59,4 +59,37 @@
     float: right;
     margin-top: 48px;
   }
+  &-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: $level-4;
+    .fileinput {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+    &-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .op-hide {
+      opacity: 0;
+    }
+  }
 }

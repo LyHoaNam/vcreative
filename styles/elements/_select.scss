@@ -1,0 +1,18 @@
+.vs__selected-options {
+  input {
+    @include fz(16);
+    margin: 0;
+    &::placeholder {
+      color: $level-4;
+    }
+  }
+}
+.vs--searchable .vs__dropdown-toggle {
+  border: 1px solid #ebecf0;
+  border-radius: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  .vs__open-indicator {
+    transform: scale(.7);
+  }
+}
