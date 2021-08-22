@@ -1,8 +1,14 @@
+.font-regular {
+  font-weight: $regular;
+}
 .font-medium {
   font-weight: $medium;
 }
 .font-bold {
   font-weight: $bold;
+}
+.font-italic {
+  font-style: italic;
 }
 .title {
   font-weight: 500;
@@ -27,6 +33,10 @@
   }
 }
 .text-12 {
+  &-5 {
+    @include fz(12);
+    color: $level-5;
+  }
   &-6 {
     @include fz(12);
     color: $level-6;
@@ -73,6 +83,10 @@
 }
 
 .text-16 {
+  &-w1 {
+    @include fz(16);
+    color: $warm-1;
+  }
   &-w2 {
     @include fz(16);
     color: $warm-2;

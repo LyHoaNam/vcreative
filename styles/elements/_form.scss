@@ -56,6 +56,20 @@
     color: $level-4;
   }
 }
+.textarea-normal {
+  border: 1px solid #ebecf0;
+  border-radius: 2px;
+  padding: 8px 12px;
+  @include fz(16);
+  color: $level-8;
+  width: 100%;
+  min-height: 156px;
+  box-sizing: border-box;
+  resize: none;
+  &::placeholder {
+    color: $level-4;
+  }
+}
 .input-pass {
   width: 100%;
   padding: 8px 38px 8px 12px;

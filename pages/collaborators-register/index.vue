@@ -8,7 +8,7 @@
       <div class="col col-lg-6 co-intro-col-left">
         <div class="align-center ml-50">
           <div class="ic-co-intro-should-be" />
-          <p class="text-32-8-b ml-20">Tạo ấn tượng</p>
+          <h2 class="text-32-8-b ml-20">Tạo ấn tượng</h2>
         </div>
         <div class="row mt-56">
           <div
@@ -24,7 +24,7 @@
       <div class="col col-lg-6 co-intro-col-right">
         <div class="align-center co-intro-title-not">
           <div class="ic-co-intro-did-not" />
-          <p class="text-32-8-b ml-20">Cần tránh</p>
+          <h2 class="text-32-8-b ml-20">Cần tránh</h2>
         </div>
         <div class="row mt-56">
           <div

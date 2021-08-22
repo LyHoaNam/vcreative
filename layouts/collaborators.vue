@@ -9,13 +9,14 @@
           />
         </nuxt-link>
         <ul class="ml-44 mn-step flex">
-          <li
-            v-for="(step, idx) in lsStep"
-            :key="`${idx}-step-collaborators`"
-            class="mn-step-item align-center"
-          >
-            <div class="mn-step-icon">{{ step.key }}</div>
-            <p class="ml-12 text-16-5">{{ step.txt }}</p>
+          <li v-for="(step, idx) in lsStep" :key="`${idx}-step-collaborators`">
+            <nuxt-link
+              :to="`/collaborators-register/${step.key}`"
+              class="mn-step-item align-center"
+            >
+              <div class="mn-step-icon">{{ idx + 1 }}</div>
+              <p class="ml-12 text-16-5">{{ step.txt }}</p>
+            </nuxt-link>
           </li>
         </ul>
       </div>
@@ -30,7 +31,7 @@ export default {
     return {
       lsStep: [
         {
-          key: '1',
+          key: 'profile',
           txt: 'Thông tin cá nhân',
         },
         {

@@ -99,4 +99,12 @@ $mn-h: 72px;
     @include fz(16);
     font-weight: $medium;
   }
+  .nuxt-link-active {
+    .mn-step-icon {
+      background-color: $cool-2;
+    }
+    .text-16-5 {
+      color: $cool-2;
+    }
+  }
 }
