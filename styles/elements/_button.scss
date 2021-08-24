@@ -86,3 +86,12 @@
     left: 32px;
   }
 }
+.btn-secondary {
+  background-color: #F0F1FE;
+  border-radius: 3px;
+  padding: 8px 16px;
+  @include fz(16);
+  color: $cool-2;
+  cursor: pointer;
+  height: 40px;
+}

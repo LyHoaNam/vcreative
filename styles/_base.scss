@@ -149,3 +149,8 @@ button {
   color: inherit;
   background: none
 }
+input {
+  &:focus {
+    outline: none;
+  }
+}

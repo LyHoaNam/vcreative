@@ -1,5 +1,5 @@
 <template>
-  <div class="container-sm pt-40 pb-106">
+  <div class="container-xsm pt-40 pb-106">
     <h1 class="text-32-8">Để tạo hồ sơ thành công</h1>
     <p class="text-16-6">
       Lưu ý tạo ấn tượng cho hồ sơ của bạn và những điều cần tránh
@@ -8,7 +8,7 @@
       <div class="col col-lg-6 co-intro-col-left">
         <div class="align-center ml-50">
           <div class="ic-co-intro-should-be" />
-          <p class="text-32-8-b ml-20">Tạo ấn tượng</p>
+          <h2 class="text-32-8-b ml-20">Tạo ấn tượng</h2>
         </div>
         <div class="row mt-56">
           <div
@@ -24,7 +24,7 @@
       <div class="col col-lg-6 co-intro-col-right">
         <div class="align-center co-intro-title-not">
           <div class="ic-co-intro-did-not" />
-          <p class="text-32-8-b ml-20">Cần tránh</p>
+          <h2 class="text-32-8-b ml-20">Cần tránh</h2>
         </div>
         <div class="row mt-56">
           <div
