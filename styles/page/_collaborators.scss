@@ -127,7 +127,7 @@
   &-s-ip-con {
     height: 40px;
     padding: 4px;
-    border: 1px solid #EBECF0;
+    border: 1px solid #ebecf0;
     box-sizing: border-box;
     border-radius: 3px;
     input {
@@ -141,7 +141,6 @@
       &::placeholder {
         color: $level-5;
       }
-
     }
     .btn-primary {
       width: 64px;
@@ -159,7 +158,7 @@
     width: 168px;
     height: 40px;
     margin-right: 16px;
-    border: 1px solid #EBECF0;
+    border: 1px solid #ebecf0;
     box-sizing: border-box;
     border-radius: 3px;
     .vs__dropdown-toggle {
@@ -170,7 +169,7 @@
     height: 40px;
   }
   &-hr {
-    border-bottom: 1px solid #EBECF0;
+    border-bottom: 1px solid #ebecf0;
     margin-top: 40px;
     margin-bottom: 24px;
   }
@@ -182,5 +181,37 @@
   }
   &-ip {
     width: 567px;
+  }
+}
+.co-complete {
+  &-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("~/assets/images/complete.jpg");
+    width: 100%;
+    height: 435px;
+  }
+  &-title {
+    @include fz(56);
+    line-height: 66px;
+    color: $level-8;
+    font-weight: $medium;
+    margin-top: 68px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  &-des {
+    margin: auto;
+    width: 583px;
+    margin-bottom: 80px;
+  }
+  &-btn {
+    margin-bottom: 120px;
+    width: 355px;
+    height: 64px;
+    @include fz(20);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
