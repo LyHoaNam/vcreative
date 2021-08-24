@@ -95,16 +95,46 @@ $mn-h: 72px;
     @include flex();
     @include justify-content(center);
     @include align-items(center);
+  }
+  &-count {
     color: $level-0;
     @include fz(16);
     font-weight: $medium;
   }
-  .nuxt-link-active {
+  .stepActive {
     .mn-step-icon {
       background-color: $cool-2;
     }
     .text-16-5 {
       color: $cool-2;
+    }
+  }
+  .stepComplete {
+    .mn-step-icon {
+      background-color: $cool-2;
+      overflow: hidden;
+      position: relative;
+      .mn-step-count {
+        display: none;
+      }
+      &::after {
+        content: "";
+
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 5px;
+        height: 9px;
+        border: 2px solid $level-0;
+        border-top: 0;
+        border-left: 0;
+        left: 12px;
+        top: 10px;
+        position: absolute;
+      }
+    }
+    .text-16-5 {
+      color: $level-8;
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="mn-container">
-      <div class="container align-center">
+      <div class="container-sm align-center">
         <nuxt-link to="/">
           <eleIcon
             :img-url="require('~/assets/images/Logo.png')"
@@ -10,13 +10,15 @@
         </nuxt-link>
         <ul class="ml-44 mn-step flex">
           <li v-for="(step, idx) in lsStep" :key="`${idx}-step-collaborators`">
-            <nuxt-link
-              :to="`/collaborators-register/${step.key}`"
-              class="mn-step-item align-center"
+            <div
+              :class="`mn-step-item align-center ${classStep(step.key, idx)}`"
+              @click.stop=""
             >
-              <div class="mn-step-icon">{{ idx + 1 }}</div>
+              <div class="mn-step-icon">
+                <span class="mn-step-count">{{ idx + 1 }}</span>
+              </div>
               <p class="ml-12 text-16-5">{{ step.txt }}</p>
-            </nuxt-link>
+            </div>
           </li>
         </ul>
       </div>
@@ -31,19 +33,36 @@ export default {
     return {
       lsStep: [
         {
-          key: 'profile',
+          key: 'collaborators-register-profile',
           txt: 'Thông tin cá nhân',
         },
         {
-          key: '2',
+          key: 'collaborators-register-skill-experience',
           txt: 'Kỹ năng và kinh nghiệm',
         },
         {
-          key: '3',
+          key: 'collaborators-register-link-security',
           txt: 'Liên kết và bảo mật tài khoản',
         },
       ],
     };
+  },
+  methods: {
+    classStep(key, index) {
+      const namePage = this.$route.name;
+      if (key === namePage) {
+        return 'stepActive';
+      }
+      const indexActive = this.lsStep
+        .map((step) => {
+          return step.key;
+        })
+        .indexOf(namePage);
+      if (index < indexActive) {
+        return 'stepComplete';
+      }
+      return '';
+    },
   },
 };
 </script>

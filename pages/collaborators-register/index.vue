@@ -1,5 +1,5 @@
 <template>
-  <div class="container-sm pt-40 pb-106">
+  <div class="container-xsm pt-40 pb-106">
     <h1 class="text-32-8">Để tạo hồ sơ thành công</h1>
     <p class="text-16-6">
       Lưu ý tạo ấn tượng cho hồ sơ của bạn và những điều cần tránh
