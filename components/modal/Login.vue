@@ -127,7 +127,7 @@ export default {
     },
     handleSubmit() {
       this.$modal.hide('Login');
-      this.$router.push({ path: '/top' });
+      this.$router.push({ path: '/services' });
     },
     handleClickSignin() {
       this.$modal.show('SignIn');

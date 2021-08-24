@@ -145,6 +145,10 @@
   }
 }
 .text-24 {
+  &-8 {
+    @include fz(24);
+    color: $level-8;
+  }
   &-8-m {
     @include fz(24);
     color: $level-8;
