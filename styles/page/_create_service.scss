@@ -1,0 +1,39 @@
+.cre-se-su {
+  &-content {
+    .co-pro-col-left {
+      max-width: 126px;
+      padding-right: 20px;
+    }
+  }
+  &-center {
+    min-width: 592px;
+    width: 592px;
+  }
+  &-des {
+    width: 100%;
+  }
+  &-select {
+    border: 1px solid #EBECF0;
+    border-radius: 2px;
+    min-height: 36px;
+    max-width: 287px;
+    width: 100%;
+    .vs__dropdown-toggle {
+      border: 0;
+    }
+  }
+  &-files {
+    max-width: 260px;
+  }
+  &-search {
+    min-height: 70px;
+  }
+}
+.cre-se-cancel {
+  width: 97px;
+  height: 48px;
+}
+.cre-se-submit {
+  width: 200px;
+  height: 48px;
+}
