@@ -69,3 +69,23 @@ export const listYear = () => {
   }
   return result;
 };
+export const listDay = () => {
+  const result = [];
+  for (let index = 1; index < 365; index++) {
+    result.push({
+      txt: `${index} Ngày`,
+      key: index,
+    });
+  }
+  return result;
+};
+export const listOptions = () => {
+  const result = [];
+  for (let index = 1; index < 365; index++) {
+    result.push({
+      txt: `${index}`,
+      key: index,
+    });
+  }
+  return result;
+};

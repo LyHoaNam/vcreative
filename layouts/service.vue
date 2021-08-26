@@ -33,27 +33,27 @@ export default {
     return {
       lsStep: [
         {
-          key: 'summary',
+          key: 'create-service-summary',
           txt: 'Tổng quan',
         },
         {
-          key: 'price-list',
+          key: 'create-service-price-list',
           txt: 'Bảng giá ',
         },
         {
-          key: 'service-description',
+          key: 'create-service-service-description',
           txt: 'Mô tả dịch vụ',
         },
         {
-          key: 'request-summary',
+          key: 'create-service-request-summary',
           txt: 'Tóm tắt yêu cầu',
         },
         {
-          key: 'pictures',
+          key: 'create-service-pictures',
           txt: 'Hình ảnh',
         },
         {
-          key: 'review',
+          key: 'create-service-review',
           txt: 'Xem lại',
         },
       ],

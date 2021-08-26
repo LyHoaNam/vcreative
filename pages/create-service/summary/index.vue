@@ -5,7 +5,7 @@
       Hãy cho chúng tôi biết về tổng quan dịch vụ mà bạn cung cấp để hiển thị
       đến khách hàng
     </h3>
-    <div class="co-pro-hr mt-26 mb-24">
+    <div class="co-pro-hr mt-26 mb-24 cre-se-container">
       <span class="text-16-w1">* </span
       ><span class="text-16-6 font-itaclic">Trường bắt buộc</span>
     </div>

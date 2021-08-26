@@ -22,15 +22,12 @@
   </div>
 </template>
 <script>
-import { major, listYear } from '~/utils/skill.js';
+import { major } from '~/utils/skill.js';
 
 export default {
   layout: 'collaborators',
   data() {
     return {
-      skillSelected: '',
-      yearSelected: '',
-      lsYear: listYear(),
       listContent: [1],
       major,
     };
