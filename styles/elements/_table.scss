@@ -47,3 +47,16 @@
     margin: auto auto 10px auto;
   }
 }
+.tb-cell-center {
+  vertical-align: middle;
+}
+.table-more-service {
+  border-collapse: collapse;
+  width: 100%;
+  &-tr {
+    border: 1px solid #ebecf0;
+  }
+  &-td {
+    padding: 24px;
+  }
+}

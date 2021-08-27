@@ -1,0 +1,131 @@
+.cre-se-su {
+  &-content {
+    .co-pro-col-left {
+      max-width: 126px;
+      padding-right: 20px;
+    }
+  }
+  &-center {
+    min-width: 592px;
+    width: 592px;
+  }
+  &-des {
+    width: 100%;
+  }
+  &-select {
+    border: 1px solid #ebecf0;
+    border-radius: 2px;
+    min-height: 36px;
+    max-width: 287px;
+    width: 100%;
+    .vs__dropdown-toggle {
+      border: 0;
+    }
+  }
+  &-files {
+    max-width: 260px;
+  }
+  &-search {
+    min-height: 70px;
+  }
+}
+.cre-se-cancel {
+  width: 97px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.cre-se-submit {
+  width: 200px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.cre-se-container {
+  max-width: 716px;
+  min-width: 716px;
+  width: 100%;
+}
+.cre-se-table {
+  margin-bottom: 64px;
+  &-header {
+    font-weight: $medium;
+    color: $level-6;
+  }
+  &-ip {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: $level-8;
+    border: 0;
+    @include fz(16);
+    &::placeholder {
+      color: $level-5;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .vs__dropdown-toggle {
+    border: 0;
+  }
+  .p8 {
+    padding: 8px;
+  }
+  &-price {
+    width: 135px;
+  }
+}
+.cre-se-more {
+  &-con {
+    background: #fafafa;
+  }
+  &-row {
+    @include flex();
+    @include align-items(center);
+    @include justify-content(space-around);
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &-title {
+    min-width: 160px;
+  }
+  &-dropdown {
+    border: 1px solid #ebecf0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: $level-0;
+    width: 120px;
+    min-width: 120px;
+    height: 40px;
+    .vs__dropdown-toggle {
+      border: 0;
+      height: 40px;
+      padding: 0;
+    }
+  }
+}
+.cre-se-add-ser {
+  &-row {
+    background-color: $level-1;
+    padding: 16px 24px;
+  }
+  &-checked {
+    min-width: 36px;
+  }
+  textarea {
+    min-height: 76px;
+  }
+  input {
+    height: 40px;
+  }
+  .ip-box-con {
+    height: 16px;
+  }
+}
+.cre-se-des {
+  &-textarea {
+    height: 457px;
+  }
+}

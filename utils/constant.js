@@ -25,3 +25,37 @@ export const TITLE_INFO_BLOCK = {
   tieuchuan: 'Gói tiêu chuẩn',
   nangcao: 'Gói nâng cao',
 };
+export const LIST_FILES = [
+  {
+    txt: 'PNG',
+    key: 'png',
+  },
+  {
+    txt: 'AI',
+    key: 'ai',
+  },
+  {
+    txt: 'JPG',
+    key: 'jpg',
+  },
+  {
+    txt: 'PDS',
+    key: 'pds',
+  },
+  {
+    txt: 'PDF',
+    key: 'pdf',
+  },
+  {
+    txt: 'EPS',
+    key: 'eps',
+  },
+  {
+    txt: 'SVG',
+    key: 'svg',
+  },
+  {
+    txt: 'CDR',
+    key: 'cdr',
+  },
+];

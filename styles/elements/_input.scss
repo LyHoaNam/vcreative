@@ -68,24 +68,35 @@
   width: 16px;
   border-radius: 2px;
   border: 1px solid $level-3;
+  box-sizing: border-box;
 }
 .ip-box-con:hover input ~ .ip-box-checkmark {
   background-color: rgba($color: $cool-2, $alpha: 0.1);
 }
 .ip-box-con input:checked ~ .ip-box-checkmark {
   border: 1px solid $cool-2;
+  background-color: $cool-2;
   &::before {
     content: "";
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 5px;
-    height: 9px;
-    border: 2px solid $cool-2;
-    border-top: 0;
-    border-left: 0;
-    left: 4px;
-    top: 1px;
+    background-image: url("~/assets/images/icon/check.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
   }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
