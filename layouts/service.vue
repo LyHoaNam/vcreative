@@ -41,7 +41,7 @@ export default {
           txt: 'Bảng giá ',
         },
         {
-          key: 'create-service-service-description',
+          key: 'create-service-descriptions',
           txt: 'Mô tả dịch vụ',
         },
         {

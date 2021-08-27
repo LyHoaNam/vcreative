@@ -19,11 +19,14 @@
             <nuxt-link
               to="/create-service/summary"
               class="btn-line-5 mr-24 cre-se-cancel"
-              >Hủy</nuxt-link
+              >Quay lại</nuxt-link
             >
-            <button class="btn-primary cre-se-submit">
+            <nuxt-link
+              to="/create-service/descriptions"
+              class="btn-primary cre-se-submit"
+            >
               Lưu &#38; Tiếp tục
-            </button>
+            </nuxt-link>
           </div>
         </div>
       </div>
