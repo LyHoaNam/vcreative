@@ -156,3 +156,11 @@
   @extend %base-ic-co-intro;
   background-image: url("~/assets/images/icon/emoji-dislike.png");
 }
+.ic-plus-square {
+  background-image: url("~/assets/images/icon/plus-square.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}

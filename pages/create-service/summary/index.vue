@@ -118,10 +118,15 @@
         <div class="co-pro-col-left" />
         <div class="cre-se-su-center">
           <div class="right flex">
-            <button class="btn-line-5 mr-24 cre-se-cancel">Hủy</button>
-            <button class="btn-primary cre-se-submit">
+            <nuxt-link to="/services" class="btn-line-5 mr-24 cre-se-cancel"
+              >Hủy</nuxt-link
+            >
+            <nuxt-link
+              to="/create-service/price-list"
+              class="btn-primary cre-se-submit"
+            >
               Lưu &#38; Tiếp tục
-            </button>
+            </nuxt-link>
           </div>
         </div>
       </div>

@@ -32,10 +32,12 @@
 .cre-se-cancel {
   width: 97px;
   height: 48px;
+  box-sizing: border-box;
 }
 .cre-se-submit {
   width: 200px;
   height: 48px;
+  box-sizing: border-box;
 }
 .cre-se-container {
   max-width: 716px;
@@ -102,5 +104,23 @@
       height: 40px;
       padding: 0;
     }
+  }
+}
+.cre-se-add-ser {
+  &-row {
+    background-color: $level-1;
+    padding: 16px 24px;
+  }
+  &-checked {
+    min-width: 36px;
+  }
+  textarea {
+    min-height: 76px;
+  }
+  input {
+    height: 40px;
+  }
+  .ip-box-con {
+    height: 16px;
   }
 }

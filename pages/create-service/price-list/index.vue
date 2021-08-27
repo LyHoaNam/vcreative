@@ -14,6 +14,18 @@
         <createServiceTablePackage />
         <h1 class="text-32-8 mb-32">Dịch vụ bổ sung</h1>
         <createServiceMoreService />
+        <div class="cre-se-su-center mt-56">
+          <div class="right flex">
+            <nuxt-link
+              to="/create-service/summary"
+              class="btn-line-5 mr-24 cre-se-cancel"
+              >Hủy</nuxt-link
+            >
+            <button class="btn-primary cre-se-submit">
+              Lưu &#38; Tiếp tục
+            </button>
+          </div>
+        </div>
       </div>
       <p class="text-16-6 ml-42">
         Hãy cho chúng tôi biết về tổng quan dịch vụ mà bạn cung cấp để hiển thị
