@@ -59,3 +59,32 @@ export const LIST_FILES = [
     key: 'cdr',
   },
 ];
+export const KEY_BRIEF = {
+  shortInput: 'shortInput',
+  longInput: 'longInput',
+  radio: 'radio',
+  checked: 'checked',
+  dropdown: 'dropdown',
+};
+export const lsTypeBrief = [
+  {
+    type: 'Trả lời ngắn',
+    key: KEY_BRIEF.shortInput,
+  },
+  {
+    type: 'Trả lời dài',
+    key: KEY_BRIEF.longInput,
+  },
+  {
+    type: 'Trắc nghiệm',
+    key: KEY_BRIEF.radio,
+  },
+  {
+    type: 'Hộp kiểm',
+    key: KEY_BRIEF.checked,
+  },
+  {
+    type: 'Menu thả xuống',
+    key: KEY_BRIEF.dropdown,
+  },
+];

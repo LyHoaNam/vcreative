@@ -138,3 +138,8 @@ $mn-h: 72px;
     }
   }
 }
+.mn-create-sv {
+  .mn-step-item:not(:last-child) {
+    margin-right: 7.5px;
+  }
+}
