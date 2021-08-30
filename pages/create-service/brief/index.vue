@@ -20,7 +20,7 @@
             >Quay lại</nuxt-link
           >
           <nuxt-link
-            to="/create-service/picture"
+            to="/create-service/pictures"
             class="btn-primary cre-se-submit"
             >Lưu &#38; Tiếp tục</nuxt-link
           >
