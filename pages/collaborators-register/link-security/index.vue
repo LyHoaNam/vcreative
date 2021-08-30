@@ -45,7 +45,11 @@
           <input type="text" class="input-normal" placeholder="Trả lời" />
         </div>
       </div>
-      <button class="btn-primary co-pro-continue">Tiếp tục</button>
+      <nuxt-link
+        to="/collaborators-register/complete"
+        class="btn-primary co-pro-continue"
+        >Tiếp tục</nuxt-link
+      >
     </form>
   </div>
 </template>

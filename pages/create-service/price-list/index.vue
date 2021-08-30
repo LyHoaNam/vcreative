@@ -14,8 +14,9 @@
         <createServiceTablePackage />
         <h1 class="text-32-8 mb-32">Dịch vụ bổ sung</h1>
         <createServiceMoreService />
-        <div class="cre-se-su-center mt-56">
-          <div class="right flex">
+        <div class="flex-between mt-56">
+          <div />
+          <div class="flex">
             <nuxt-link
               to="/create-service/summary"
               class="btn-line-5 mr-24 cre-se-cancel"

@@ -1,0 +1,22 @@
+.box-type {
+  &-short-ip {
+    textarea {
+      min-height: 56px;
+    }
+  }
+  &-long-ip {
+    textarea {
+      min-height: 80px;
+    }
+  }
+  &-record {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &-radio {
+    .ip-check-con {
+      @include fz(14);
+    }
+  }
+}

@@ -84,6 +84,54 @@
   }
   &-btn {
     width: 126px;
+    height: 24px;
+  }
+}
+.bl-create {
+  background-color: $level-1;
+  border-radius: 3px;
+  padding: 24px;
+  &-ques {
+    textarea {
+      min-height: 80px;
+    }
+  }
+  &-type {
+    border-radius: 3px;
+    width: 239px;
     height: 40px;
+    background-color: $level-0;
+    .vs__dropdown-toggle {
+      border: 0;
+      height: 40px;
+      padding: 0;
+    }
+    .vs__actions {
+      padding-top: 0;
+    }
+    .vs__selected {
+      margin: 0;
+    }
+  }
+  &-btn {
+    margin-top: 44px;
+    width: 97px;
+  }
+  &-ic-check {
+    width: 16px;
+    height: 16px;
+    border: 1px solid $level-3;
+    background-color: $level-0;
+    min-width: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  &.round {
+    border-radius: 50%;
+  }
+  &-ip {
+    margin-left: 20px;
+    margin-right: 10px;
+    max-width: calc(100% - 70px);
   }
 }

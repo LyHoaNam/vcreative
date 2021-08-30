@@ -17,14 +17,19 @@
         placeholder="Mô tả cho khách hàng vì sao nên chọn dịch vụ của bạn"
       />
       <p class="text-16-5 right">{{ valueDes.length }}/1200</p>
-      <div class="cre-se-su-center mt-56">
-        <div class="right flex">
+      <div class="flex-between mt-56">
+        <div />
+        <div class="flex">
           <nuxt-link
             to="/create-service/price-list"
             class="btn-line-5 mr-24 cre-se-cancel"
             >Quay lại</nuxt-link
           >
-          <button class="btn-primary cre-se-submit">Lưu &#38; Tiếp tục</button>
+          <nuxt-link
+            to="/create-service/brief"
+            class="btn-primary cre-se-submit"
+            >Lưu &#38; Tiếp tục</nuxt-link
+          >
         </div>
       </div>
     </div>

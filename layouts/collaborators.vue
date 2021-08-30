@@ -9,16 +9,16 @@
           />
         </nuxt-link>
         <ul class="ml-44 mn-step flex">
-          <li v-for="(step, idx) in lsStep" :key="`${idx}-step-collaborators`">
-            <div
-              :class="`mn-step-item align-center ${classStep(step.key, idx)}`"
-              @click.stop=""
-            >
-              <div class="mn-step-icon">
-                <span class="mn-step-count">{{ idx + 1 }}</span>
-              </div>
-              <p class="ml-12 text-16-5">{{ step.txt }}</p>
+          <li
+            v-for="(step, idx) in lsStep"
+            :key="`${idx}-step-collaborators`"
+            :class="`mn-step-item align-center ${classStep(step.key, idx)}`"
+            @click.stop=""
+          >
+            <div class="mn-step-icon">
+              <span class="mn-step-count">{{ idx + 1 }}</span>
             </div>
+            <p class="ml-12 text-16-5">{{ step.txt }}</p>
           </li>
         </ul>
       </div>
