@@ -20,16 +20,22 @@
             class="btn-line-5 mr-24 cre-se-cancel"
             >Quay lại</nuxt-link
           >
-          <nuxt-link to="#" class="btn-primary cre-se-submit">
+          <button class="btn-primary cre-se-submit" @click="handleSubmit">
             Lưu &#38; Tiếp tục
-          </nuxt-link>
+          </button>
         </div>
       </div>
     </div>
+    <modalComplete />
   </div>
 </template>
 <script>
 export default {
   layout: 'service',
+  methods: {
+    handleSubmit() {
+      this.$modal.show('CreateServiceComplete');
+    },
+  },
 };
 </script>
