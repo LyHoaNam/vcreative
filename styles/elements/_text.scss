@@ -143,6 +143,10 @@
     color: $level-8;
     font-weight: $medium;
   }
+  &-8 {
+    @include fz(20);
+    color: $level-8;
+  }
 }
 .text-24 {
   &-8 {
