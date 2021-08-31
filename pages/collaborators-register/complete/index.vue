@@ -6,13 +6,20 @@
       Hồ sơ của bạn đã hoàn thành! Hãy bắt đầu thêm dịch vụ của bạn để sẵn sàng
       quảng cáo đến khách hàng
     </p>
-    <nuxt-link to="/services" class="btn-primary co-complete-btn"
+    <nuxt-link :to="siteMap.services" class="btn-primary co-complete-btn"
       >Bắt đầu thêm dịch vụ</nuxt-link
     >
   </div>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'onlyheader',
+  data() {
+    return {
+      siteMap,
+    };
+  },
 };
 </script>

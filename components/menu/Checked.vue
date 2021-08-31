@@ -1,7 +1,7 @@
 <template>
   <ul class="flex-center">
     <li class="mn-li align-center">
-      <nuxt-link class="mn-checked" to="/collaborators-register">{{
+      <nuxt-link class="mn-checked" :to="siteMap.collaboratorsRegister">{{
         textLink
       }}</nuxt-link>
     </li>
@@ -18,7 +18,7 @@
       />
     </li>
     <li class="pl-26 pointer">
-      <nuxt-link class="mn-checked" to="/profile/123">
+      <nuxt-link class="mn-checked" :to="siteMap.profileDetail">
         <eleIcon
           :img-url="require('~/assets/images/mock_avatar.png')"
           img-class="mn-avatar"
@@ -28,7 +28,13 @@
   </ul>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
 export default {
+  data() {
+    return {
+      siteMap: funcSiteMap(),
+    };
+  },
   computed: {
     textLink() {
       if (this.$route.name === 'collaborators-register-complete') {

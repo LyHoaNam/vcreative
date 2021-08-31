@@ -118,11 +118,14 @@
         <div class="co-pro-col-left" />
         <div class="cre-se-su-center">
           <div class="right flex">
-            <nuxt-link to="/services" class="btn-line-5 mr-24 cre-se-cancel"
-              >Hủy</nuxt-link
-            >
             <nuxt-link
-              to="/create-service/price-list"
+              :to="siteMap.services"
+              class="btn-line-5 mr-24 cre-se-cancel"
+            >
+              Hủy
+            </nuxt-link>
+            <nuxt-link
+              :to="siteMap.createServicePriceList"
               class="btn-primary cre-se-submit"
             >
               Lưu &#38; Tiếp tục
@@ -136,10 +139,13 @@
 <script>
 import { skillAndService } from '~/utils/skill.js';
 import { LIST_FILES } from '~/utils/constant.js';
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'service',
   data() {
     return {
+      siteMap,
       valueDes: '',
       categorySelected: '',
       skillAndService,
