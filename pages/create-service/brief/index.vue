@@ -15,12 +15,12 @@
         <div />
         <div class="flex">
           <nuxt-link
-            to="/create-service/descriptions"
+            :to="siteMap.createServiceDescriptions"
             class="btn-line-5 mr-24 cre-se-cancel"
             >Quay lại</nuxt-link
           >
           <nuxt-link
-            to="/create-service/pictures"
+            :to="siteMap.createServicePictures"
             class="btn-primary cre-se-submit"
             >Lưu &#38; Tiếp tục</nuxt-link
           >
@@ -31,12 +31,19 @@
 </template>
 <script>
 import { mapGetters } from 'vuex';
+import { funcSiteMap } from '~/utils/sitemap.js';
 import {
   NAME_STORE as nameBrief,
   GET_QUES_LIST_COMPONENT,
 } from '~/store/create_service_brief.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'service',
+  data() {
+    return {
+      siteMap,
+    };
+  },
   computed: {
     ...mapGetters({
       lsComp: `${nameBrief}/${GET_QUES_LIST_COMPONENT}`,

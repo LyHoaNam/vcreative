@@ -13,8 +13,10 @@
         gian này bạn cũng có thể tạo thêm các dịch vụ mà bạn cung cấp.
       </p>
       <div class="flex-between modal-sv-complete-bot">
-        <nuxt-link to="/services" class="btn-line">Về trang chủ</nuxt-link>
-        <nuxt-link to="/create-service/summary" class="btn-primary">
+        <nuxt-link :to="siteMap.services" class="btn-line"
+          >Về trang chủ</nuxt-link
+        >
+        <nuxt-link :to="siteMap.createServiceSummary" class="btn-primary">
           Tạo dịch vụ mới
         </nuxt-link>
       </div>
@@ -22,7 +24,13 @@
   </client-only>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
 export default {
   name: 'CreateServiceComplete',
+  data() {
+    return {
+      siteMap: funcSiteMap(),
+    };
+  },
 };
 </script>

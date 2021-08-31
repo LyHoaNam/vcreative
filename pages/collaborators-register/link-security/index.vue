@@ -46,7 +46,7 @@
         </div>
       </div>
       <nuxt-link
-        to="/collaborators-register/complete"
+        :to="siteMap.collaboratorsRegisterComplete"
         class="btn-primary co-pro-continue"
         >Tiếp tục</nuxt-link
       >
@@ -54,10 +54,13 @@
   </div>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'collaborators',
   data() {
     return {
+      siteMap,
       lsLink: [
         {
           icon: require('~/assets/images/icon/ic_web.png'),

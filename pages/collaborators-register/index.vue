@@ -41,7 +41,7 @@
       </div>
     </div>
     <nuxt-link
-      to="/collaborators-register/profile"
+      :to="siteMap.collaboratorsRegisterProfile"
       class="btn-primary co-intro-btn-continue"
     >
       Tiếp tục
@@ -49,10 +49,13 @@
   </div>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'collaborators',
   data() {
     return {
+      siteMap,
       lsShouldBe: [
         {
           txt: 'Dành thời gian của bạn trong việc tao hồ sơ của bạn để nó chính xác',

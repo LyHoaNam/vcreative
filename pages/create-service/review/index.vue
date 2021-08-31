@@ -16,12 +16,13 @@
         <div />
         <div class="flex">
           <nuxt-link
-            to="/create-service/pictures"
+            :to="siteMap.createServicePictures"
             class="btn-line-5 mr-24 cre-se-cancel"
-            >Quay lại</nuxt-link
           >
+            Quay lại
+          </nuxt-link>
           <button class="btn-primary cre-se-submit" @click="handleSubmit">
-            Lưu &#38; Tiếp tục
+            Hoàn thành
           </button>
         </div>
       </div>
@@ -30,8 +31,15 @@
   </div>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'service',
+  data() {
+    return {
+      siteMap,
+    };
+  },
   methods: {
     handleSubmit() {
       this.$modal.show('CreateServiceComplete');

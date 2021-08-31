@@ -8,37 +8,39 @@
   </nav>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   data() {
     return {
       lsNav: [
         {
           txt: 'Dịch vụ',
-          url: '/services',
+          url: siteMap.services,
         },
         {
           txt: 'Chợ thiết kế',
-          url: '/services/123',
+          url: siteMap.servicesDetail,
         },
         {
           txt: 'Mẹo hay',
-          url: '#',
+          url: siteMap.profileDetail,
         },
         {
           txt: 'Tin tức',
-          url: '#',
+          url: siteMap.profileProduct,
         },
         {
           txt: 'Phản hồi',
-          url: '#',
+          url: siteMap.collaboratorsRegister,
         },
         {
           txt: 'Tuyển dụng',
-          url: '#',
+          url: siteMap.createServiceSummary,
         },
         {
           txt: 'Hỗ trợ',
-          url: '#',
+          url: siteMap.collaboratorsRegisterComplete,
         },
       ],
     };

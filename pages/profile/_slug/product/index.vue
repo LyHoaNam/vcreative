@@ -1,6 +1,6 @@
 <template>
   <div class="container pt-30 pb-106">
-    <nuxt-link to="/profile/123" class="btn-see-more block mb-30"
+    <nuxt-link :to="siteMap.profileDetail" class="btn-see-more block mb-30"
       >Quay lại
     </nuxt-link>
     <profileBarPro class="mb-40" />
@@ -39,9 +39,12 @@
 </template>
 <script>
 import { mockListCardSell } from '~/utils/common.js';
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   data() {
     return {
+      siteMap,
       listCard: mockListCardSell(20),
     };
   },

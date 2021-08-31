@@ -21,12 +21,12 @@
         <div />
         <div class="flex">
           <nuxt-link
-            to="/create-service/price-list"
+            :to="siteMap.createServicePriceList"
             class="btn-line-5 mr-24 cre-se-cancel"
             >Quay lại</nuxt-link
           >
           <nuxt-link
-            to="/create-service/brief"
+            :to="siteMap.createServiceBrief"
             class="btn-primary cre-se-submit"
             >Lưu &#38; Tiếp tục</nuxt-link
           >
@@ -36,11 +36,14 @@
   </div>
 </template>
 <script>
+import { funcSiteMap } from '~/utils/sitemap.js';
+const siteMap = funcSiteMap();
 export default {
   layout: 'service',
   data() {
     return {
       valueDes: '',
+      siteMap,
     };
   },
 };
