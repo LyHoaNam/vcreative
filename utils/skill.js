@@ -61,6 +61,7 @@ export const skillAndService = [
     key: 'poster',
   },
 ];
+export const HEAD_CHANGE_OPT = { txt: 'Không giới hạn', key: 'unlimit' };
 export const listYear = () => {
   const currentYear = new Date().getFullYear();
   const result = [];

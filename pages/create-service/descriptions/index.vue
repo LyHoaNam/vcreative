@@ -37,14 +37,28 @@
 </template>
 <script>
 import { funcSiteMap } from '~/utils/sitemap.js';
+import {
+  NAME_STORE as nameDes,
+  GET_DESCRIPTION_SV,
+  SET_DESCRIPTION_SV,
+} from '~/store/create_service_des.js';
 const siteMap = funcSiteMap();
 export default {
   layout: 'service',
   data() {
     return {
-      valueDes: '',
       siteMap,
     };
+  },
+  computed: {
+    valueDes: {
+      get() {
+        return this.$store.getters[`${nameDes}/${GET_DESCRIPTION_SV}`];
+      },
+      set(value) {
+        return this.$store.commit(`${nameDes}/${SET_DESCRIPTION_SV}`, value);
+      },
+    },
   },
 };
 </script>

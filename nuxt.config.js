@@ -26,6 +26,7 @@ export default {
   plugins: [
     { src: '~/plugins/swiper.js' },
     { src: '~/plugins/modal.js' },
+    { src: '~/plugins/vuex-persist', mode: 'client' },
     { src: '~/plugins/vue-image-upload.js', mode: 'client' },
     { src: '~/plugins/vue-select.js', mode: 'client' },
   ],
