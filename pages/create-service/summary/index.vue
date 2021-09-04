@@ -140,20 +140,67 @@
 import { skillAndService } from '~/utils/skill.js';
 import { LIST_FILES } from '~/utils/constant.js';
 import { funcSiteMap } from '~/utils/sitemap.js';
+import {
+  NAME_STORE as nameSummary,
+  SET_TITLE_SUMMARY,
+  GET_TITLE_SUMMARY,
+  GET_CATEGORY_SUMMARY,
+  SET_CATEGORY_SUMMARY,
+  SET_TYPE_SUMMARY,
+  GET_TYPE_SUMMARY,
+  GET_KEY_SEARCH_SUMMARY,
+  SET_KEY_SEARCH_SUMMARY,
+} from '~/store/create_service_summary.js';
 const siteMap = funcSiteMap();
 export default {
   layout: 'service',
   data() {
     return {
       siteMap,
-      valueDes: '',
-      categorySelected: '',
       skillAndService,
-      typeSelected: '',
       lsType: ['Cơ bản', 'Tiêu chuẩn', 'Nâng cao'],
       listFiles: LIST_FILES,
-      checkedFile: [],
     };
+  },
+  computed: {
+    valueDes: {
+      get() {
+        return this.$store.getters[`${nameSummary}/${GET_TITLE_SUMMARY}`];
+      },
+      set(value) {
+        return this.$store.commit(`${nameSummary}/${SET_TITLE_SUMMARY}`, value);
+      },
+    },
+    categorySelected: {
+      get() {
+        return this.$store.getters[`${nameSummary}/${GET_CATEGORY_SUMMARY}`];
+      },
+      set(value) {
+        return this.$store.commit(
+          `${nameSummary}/${SET_CATEGORY_SUMMARY}`,
+          value
+        );
+      },
+    },
+    typeSelected: {
+      get() {
+        return this.$store.getters[`${nameSummary}/${GET_TYPE_SUMMARY}`];
+      },
+      set(value) {
+        return this.$store.commit(`${nameSummary}/${SET_TYPE_SUMMARY}`, value);
+      },
+    },
+    checkedFile: {
+      get() {
+        return this.$store.getters[`${nameSummary}/${GET_KEY_SEARCH_SUMMARY}`];
+      },
+      set(value) {
+        return this.$store.commit(
+          `${nameSummary}/${SET_KEY_SEARCH_SUMMARY}`,
+          value
+        );
+      },
+    },
   },
 };
 </script>
